@@ -1,0 +1,27 @@
+@import "variables";
+@import "helpers";
+
+header {
+  width: 100%;
+  max-width: $max-width;
+  padding: $base-padding 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: $header-height;
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  color: $header-text-color;
+}
+
+main {
+  width: 100%;
+  max-width: $max-width;
+  margin-top: $header-height;
+}
+
+footer {
+  width: 100%;
+  max-width: $max-width;
+  bottom: 0;
+}

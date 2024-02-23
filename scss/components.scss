@@ -1,0 +1,125 @@
+// componente de reserva
+.booking {
+  padding: $base-padding;
+  border-top: 2px solid #ddd;
+  max-width: 1400px;
+  margin: auto;
+
+  form {
+    @include flexbox(flex, row, center, space-between);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+    input,
+    select {
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      &[type="text"] {
+        width: 20rem;
+        padding: $base-padding/2;
+        font-size: $font-size;
+      }
+
+      &::placeholder {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      &:focus {
+        border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+      }
+
+    }
+
+    #personas {
+      width: 4rem;
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      & option {
+        text-align: center;
+      }
+    }
+
+    option {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #444;
+      }
+    }
+  }
+}
+
+.card {
+  @include card-base();
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin: 10px 20px;
+    font-size: $font-size * 1.1;
+    font-weight: bold;
+    color: $color-text;
+  }
+
+  p,
+  ul {
+    flex-grow: 1;
+  }
+
+  p {
+    margin: 10px 20px;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  ul {
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    li {
+      margin-bottom: 5px;
+      font-size: $font-size * 0.9;
+      color: $color-text;
+
+      &:before {
+        content: "•";
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.parallax {
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

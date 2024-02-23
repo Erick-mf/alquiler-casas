@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>ViilaZen | Alquiler de casas</title>
+    </head>
+    <body>
+        <header class="header">
+            <section class="header__logo"><a href="index.html">VillaZen</a></section>
+            <nav>
+                <ul>
+                    <li class="header__link-margin">
+                        <a href="#destinos" class="header__link">Destinos</a>
+                    </li>
+                    <li class="header__link-margin">
+                        <a href="#servicios" class="header__link">Servicios</a>
+                    </li>
+                    <li class="header__link-margin">
+                        <a href="./html/galeria.html" class="header__link">Galeria</a>
+                    </li>
+                    <li><a href="#contactanos" class="header__link">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="booking">
+                <form action="" method="">
+                    <input type="text" id="destino" name="destino" placeholder="Escriba el destino" required />
+                    <label for="fecha_entrada">Fecha de entrada:</label>
+                    <input type="date" id="fecha_entrada" name="fecha_entrada" required />
+                    <label for="fecha_salida">Fecha de salida:</label>
+                    <input type="date" id="fecha_salida" name="fecha_salida" required />
+                    <label for="personas">Personas:</label>
+                    <select name="personas" id="personas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <button type="submit">Buscar casas</button>
+                </form>
+            </section>
+            <section id="carrusel">
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img1.webp" alt="Carrusel 1" />
+                </div>
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img2.webp" alt="Carrusel 2" />
+                </div>
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img3.webp" alt="Carrusel 3" />
+                </div>
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img4.webp" alt="Carrusel 4" />
+                </div>
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img5.webp" alt="Carrusel 5" />
+                </div>
+                <div class="slide">
+                    <img src="./img/carrusel/slider-img6.webp" alt="Carrusel 6" />
+                </div>
+            </section>
+            <section id="texto-carrusel">
+                <h1>Explora Nuestro Mundo de Lujo</h1>
+                <p>Descubre la vida de lujo en nuestras exclusivas propiedades</p>
+            </section>
+            <section id="destinos">
+                <h2 class="subtitle">Destinos de moda en España</h2>
+                <div class="container-cards">
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino1.webp" alt="Destino 1" />
+                        <h3>Marbella, Andalucia, España</h3>
+                        <p>
+                            Ha sido recientemente reformado dando a la propiedad un toque contemporáneo, manteniendo
+                            muchas de las características originales de su diseño Cortijo español y ofrece vistas
+                            parciales al mar.
+                        </p>
+                        <ul>
+                            <li>5 camas</li>
+                            <li>4 baños</li>
+                            <li>Piscina</li>
+                            <li>Jardin</li>
+                            <li>Cocina abierta</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 200</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino2.webp" alt="Destino 2" />
+                        <h3>Andratx, Islas Baleares, España</h3>
+                        <p>
+                            Ofrece la mezcla ideal de arquitectura mediterránea e instalaciones modernas, como
+                            calefacción por suelo radiante, aire acondicionado frío/calor, garaje doble y habitaciones
+                            amplias e iluminadas.
+                        </p>
+                        <ul>
+                            <li>5 camas</li>
+                            <li>4 baños</li>
+                            <li>Piscina</li>
+                            <li>Garaje doble</li>
+                            <li>Cocina moderna</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 450</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino3.webp" alt="Destino 3" />
+                        <h3>Jávea, Comunidad Valenciana, España</h3>
+                        <p>
+                            Una urbanización consolidada situada en plena naturaleza, cerca de bosques, ríos, zonas
+                            verdes, montañas de la Sierra Calderona y a poca distancia de las hermosas playas que ofrece
+                            el Mediterráneo.
+                        </p>
+                        <ul>
+                            <li>6 camas</li>
+                            <li>5 baños</li>
+                            <li>Piscina</li>
+                            <li>Cocina moderna</li>
+                            <li>Vista a la montaña</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 320</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino4.webp" alt="Destino 4" />
+                        <h3>Comunidad de Madrid, Madrid, España</h3>
+                        <p>
+                            Por su calidad de vida y cercanía al centro de Madrid, Majadahonda se ha convertido en una
+                            de las zonas más importantes de la Comunidad de Madrid.
+                        </p>
+                        <ul>
+                            <li>6 camas</li>
+                            <li>3 baños</li>
+                            <li>Piscina</li>
+                            <li>Cocina abierta</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 150</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino5.webp" alt="Destino 5" />
+                        <h3>Santa Cruz de Tenerife, Islas Canarias, España</h3>
+                        <p>
+                            Esta obra maestra de la arquitectura moderna se encuentra en las colinas de La Quinta,
+                            dentro de la exclusiva comunidad cerrada de The Hills. Esta espaciosa villa ha sido
+                            construida con un diseño sin igual y una calidad de construcción inigualable.
+                        </p>
+                        <ul>
+                            <li>6 camas</li>
+                            <li>7 baños</li>
+                            <li>Piscina</li>
+                            <li>Vistas al mar</li>
+                            <li>Cocina moderna</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 200</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino6.webp" alt="Destino 6" />
+                        <h3>La Herradura, Andalucia, España</h3>
+                        <p>
+                            La propiedad está rodeada de un exuberante jardín tropical, con un camino exterior
+                            escalonado que conecta la casa con la terraza con tumbonas y una piscina climatizada de agua
+                            salada.
+                        </p>
+                        <ul>
+                            <li>4 camas</li>
+                            <li>3 baños</li>
+                            <li>Piscina</li>
+                            <li>Cocina tradicional</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 170</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino5.webp" alt="Destino 5" />
+                        <h3>Santa Cruz de Tenerife, Islas Canarias, España</h3>
+                        <p>
+                            Esta obra maestra de la arquitectura moderna se encuentra en las colinas de La Quinta,
+                            dentro de la exclusiva comunidad cerrada de The Hills. Esta espaciosa villa ha sido
+                            construida con un diseño sin igual y una calidad de construcción inigualable.
+                        </p>
+                        <ul>
+                            <li>6 camas</li>
+                            <li>7 baños</li>
+                            <li>Piscina</li>
+                            <li>Vistas al mar</li>
+                            <li>Cocina moderna</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p>Precio por noche: € 320</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/top_destinos/top-destino6.webp" alt="Destino 6" />
+                        <h3>La Herradura, Andalucia, España</h3>
+                        <p>
+                            La propiedad está rodeada de un exuberante jardín tropical, con un camino exterior
+                            escalonado que conecta la casa con la terraza con tumbonas y una piscina climatizada de agua
+                            salada.
+                        </p>
+                        <ul>
+                            <li>4 camas</li>
+                            <li>3 baños</li>
+                            <li>Piscina</li>
+                            <li>Cocina tradicional</li>
+                        </ul>
+                        <div class="footer-card">
+                            <p class="price">Precio por noche: € 190</p>
+                            <button>Ver más</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="servicios">
+                <h2 class="subtitle">Cada reserva cuenta con los siguientes servicios</h2>
+                <div class="container-cards">
+                    <article class="card-service">
+                        <img src="./img/servicios/limpieza.svg" alt="Servicio de limpieza" />
+                        <h3>Limpieza</h3>
+                        <p>
+                            Nuestra prioridad es que usted encuentre siempre la Villa en el mejor estado posible. Usted
+                            dedíquese solo a disfrutar de su estancia
+                        </p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/gimnasio.svg" alt="Servicio de gimnasio" />
+                        <h3>Gimnasio</h3>
+                        <p>
+                            Disfrute de la actividad física, aproveche al máximo el gym y un entrenador personal
+                            calificado y con experiencia
+                        </p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/babysister.svg" alt="Servicio de cuidados de niños" />
+                        <h3>Babysitter</h3>
+                        <p>
+                            ¿Necesita que cuidemos de sus hijos? Nuestro equipo gestionará el cuidado a su satisfacción
+                        </p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/aeropuerto.svg" alt="Servicio de traslado al aeropuerto" />
+                        <h3>Aeropuerto</h3>
+                        <p>El equipo le estará esperando en el aeropuerto a su llegada y le acompañará a su partida</p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/cocina.svg" alt="Servicio de cocina y catering" />
+                        <h3>Cocina</h3>
+                        <p>
+                            Nuestro equipo le puede gestionar los mejores servicios de catering o degustaciones de las
+                            mejores especialidades mediterráneas en la propia Villa
+                        </p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/casa.svg" alt="Servicio de bienvenida" />
+                        <h3>Bienvenida</h3>
+                        <p>
+                            Nuestro personal se asegura de que la propiedad esté a una temperatura agradable a su
+                            llegada, ayuda al cliente a descargar el equipaje y a instalarse
+                        </p>
+                    </article>
+                    <article class="card-service">
+                        <img src="./img/servicios/comida.svg" alt="Servicio de cocina y catering" />
+                        <h3>Stock de comida</h3>
+                        <p>Disposición de alimentos para poder cocinar a su llegada o tomar un tentempié</p>
+                    </article>
+                </div>
+            </section>
+            <section id="novedades">
+                <h2 class="subtitle">Las novedades más recientes</h2>
+                <div class="container-cards">
+                    <article class="novedades">
+                        <img src="./img/novedades/mascotas.webp" alt="Lugares que aceptan mascotas" />
+                        <h3>Lugares que aceptan mascotas</h3>
+                        <p>
+                            Estamos emocionados de anunciar una nueva serie de destinos que ahora aceptan mascotas.
+                            Estos lugares ofrecen una cálida bienvenida a ti y a tus amigos peludos. ¡Nunca ha sido tan
+                            fácil planificar unas vacaciones que toda la familia pueda disfrutar!
+                        </p>
+                    </article>
+                    <article class="novedades">
+                        <img src="./img/novedades/descuentos.webp" alt="Descuentos de temporada" />
+                        <h3>Descuentos de temporada</h3>
+                        <p>
+                            ¡Aprovecha nuestros descuentos de temporada! Ahorra en tus próximas vacaciones con nuestras
+                            ofertas especiales. ¡Reserva ya y disfruta de unas vacaciones inolvidables a un precio
+                            increíble!
+                        </p>
+                    </article>
+                    <article class="novedades">
+                        <img src="./img/novedades/yoga.webp" alt="Retiros de yoga y bienestar" />
+                        <h3>Retiros de yoga y bienestar</h3>
+                        <p>
+                            Sumérgete en la tranquilidad con nuestros nuevos retiros de yoga y bienestar. Ofrecemos una
+                            variedad de retiros que se adaptan a todos los niveles, desde principiantes hasta yoguis
+                            experimentados. ¡Es el momento perfecto para centrarte en tu bienestar y renovar tu energía!
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="valoraciones">
+                <h2 class="subtitle">Opiniones de nuestros clientes</h2>
+                <p>
+                    Descubre lo que nuestros clientes tienen que decir sobre sus experiencias. Desde la calidad del
+                    servicio hasta la belleza de los destinos, estas opiniones te darán una visión auténtica de lo que
+                    puedes esperar.
+                </p>
+                <div class="container-cards">
+                    <article class="opinion">
+                        <img src="./img/clientes/cliente1.webp" alt="Foto del cliente 1" />
+                        <h3>Carlos García</h3>
+                        <p class="text-bold">Destino: Sevilla</p>
+                        <p>
+                            "La experiencia fue increíble. Sevilla es una ciudad llena de historia y cultura.
+                            ¡Definitivamente volveré!"
+                        </p>
+                        <p class="text-bold">Calificación: <span class="stars">★★★★☆</span></p>
+                    </article>
+                    <article class="opinion">
+                        <img src="./img/clientes/cliente2.webp" alt="Foto del cliente 2" />
+                        <h3>María Pérez</h3>
+                        <p class="text-bold">Destino: Barcelona</p>
+                        <p>
+                            "Barcelona es simplemente impresionante. La arquitectura, la comida, la gente... todo fue
+                            perfecto."
+                        </p>
+                        <p class="text-bold">Calificación: <span class="stars">★★★★★</span></p>
+                    </article>
+                    <article class="opinion">
+                        <img src="./img/clientes/cliente3.webp" alt="Foto del cliente 3" />
+                        <h3>Juan Martínez</h3>
+                        <p class="text-bold">Destino: Granada</p>
+                        <p>
+                            "Granada me robó el corazón. La Alhambra es una maravilla que hay que ver al menos una vez
+                            en la vida."
+                        </p>
+                        <p class="text-bold">Calificación: <span class="stars">★★★★☆</span></p>
+                    </article>
+                    <article class="opinion">
+                        <img src="./img/clientes/cliente4.webp" alt="Foto del cliente 4" />
+                        <h3>Isabel Fernández</h3>
+                        <p class="text-bold">Destino: Madrid</p>
+                        <p>
+                            "Madrid es una ciudad vibrante y llena de vida. Hay tanto que hacer y ver que es imposible
+                            aburrirse."
+                        </p>
+                        <p class="text-bold">Calificación: <span class="stars">★★★☆☆</span></p>
+                    </article>
+                </div>
+            </section>
+            <section id="galeria"></section>
+            <section id="contactanos">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta o comentario? Nos encantaría saber de ti.</p>
+                <form>
+                    <label for="nombre">Nombre:</label><br />
+                    <input type="text" id="nombre" name="nombre" /><br />
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" /><br />
+                    <label for="mensaje">Mensaje:</label><br />
+                    <textarea id="mensaje" name="mensaje"></textarea><br />
+                    <button type="">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div id="menu">
+                <a href="#novedades">Novedades</a>
+                <a ref="#valoraciones">Valoraciones</a>
+                <a href="#contactanos">Contáctanos</a>
+            </div>
+            <div id="rrss">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <p>© 2024 Erick Mejía</p>
+        </footer>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,620 @@
+@charset "UTF-8";
+:target::before {
+  content: "";
+  display: block;
+  height: 8vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-family: inherit;
+}
+
+header {
+  width: 100%;
+  max-width: 1400px;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 8vh;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #444444;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 8vh;
+}
+
+footer {
+  width: 100%;
+  max-width: 1400px;
+  bottom: 0;
+}
+
+.booking {
+  padding: 1rem;
+  border-top: 2px solid #ddd;
+  max-width: 1400px;
+  margin: auto;
+}
+.booking form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.booking form input,
+.booking form select {
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.booking form input[type=text],
+.booking form select[type=text] {
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.booking form input::placeholder,
+.booking form select::placeholder {
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.booking form input:focus,
+.booking form select:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease;
+}
+.booking form #personas {
+  width: 4rem;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.booking form #personas option {
+  text-align: center;
+}
+.booking form option {
+  text-align: center;
+}
+.booking form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.booking form button:hover {
+  background-color: #444;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card p,
+.card ul {
+  flex-grow: 1;
+}
+.card p {
+  margin: 10px 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+.card ul {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.card ul li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.card ul li:before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.parallax {
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease-in-out;
+}
+.header__logo {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.header__link:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 2px;
+}
+.header__link-margin {
+  margin: 1rem 2rem;
+}
+.header--translucent {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.booking {
+  padding: 1rem;
+  border-top: 2px solid #ddd;
+  max-width: 1400px;
+  margin: auto;
+}
+.booking form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.booking form input,
+.booking form select {
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.booking form input[type=text],
+.booking form select[type=text] {
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.booking form input::placeholder,
+.booking form select::placeholder {
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.booking form input:focus,
+.booking form select:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease;
+}
+.booking form #personas {
+  width: 4rem;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.booking form #personas option {
+  text-align: center;
+}
+.booking form option {
+  text-align: center;
+}
+.booking form button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.booking form button:hover {
+  background-color: #444;
+}
+
+#carrusel {
+  max-height: 75vh;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+#carrusel .slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+#carrusel .slide img {
+  width: 100%;
+}
+
+#texto-carrusel {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+#texto-carrusel h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+#texto-carrusel p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+#destinos .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#destinos .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+#destinos .container-cards .footer-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+#destinos .container-cards .footer-card button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+#servicios .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#servicios .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  -webkit-overflow-scrolling: touch;
+}
+#servicios .container-cards .card-service {
+  flex: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-right: 1rem;
+  max-width: 200px;
+}
+#servicios .container-cards .card-service {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+#servicios .container-cards .card-service:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+#servicios .container-cards .card-service img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+#servicios .container-cards .card-service h3,
+#servicios .container-cards .card-service p {
+  justify-self: center;
+}
+#servicios .container-cards .card-service h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+#servicios .container-cards .card-service p {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+#novedades .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#novedades .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+#novedades .container-cards .novedades {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+#novedades .container-cards .novedades:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+#novedades .container-cards .novedades img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+#novedades .container-cards .novedades h3,
+#novedades .container-cards .novedades p {
+  justify-self: center;
+}
+#novedades .container-cards .novedades h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+#novedades .container-cards .novedades p {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+#valoraciones .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#valoraciones p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+#valoraciones .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 76px;
+  justify-items: center;
+}
+#valoraciones .container-cards .opinion {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#valoraciones .container-cards .opinion img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+#valoraciones .container-cards .opinion h3,
+#valoraciones .container-cards .opinion p {
+  justify-self: center;
+}
+#valoraciones .container-cards .opinion h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+#valoraciones .container-cards .opinion p {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+#valoraciones .container-cards .opinion .text-bold {
+  font-weight: bold;
+}
+#valoraciones .container-cards .opinion .stars {
+  font-size: 1.2rem;
+  color: #f1c40f;
+}
+
+#contactanos {
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: 5rem auto;
+}
+#contactanos h2 {
+  color: #6c757d;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+#contactanos p {
+  color: #6c757d;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+}
+#contactanos form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contactanos form label {
+  margin-bottom: 0.5em;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#contactanos form input,
+#contactanos form textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+}
+#contactanos form input:focus,
+#contactanos form textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#contactanos form textarea {
+  resize: none;
+  min-height: 20rem;
+  scrollbar-width: auto;
+}
+#contactanos form button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer {
+  color: #6c757d;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.footer #rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=main.css.map */
