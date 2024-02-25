@@ -1,0 +1,2053 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Alquiler-casas-sass - v0.0.1</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Alquiler-casas-sass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Proyecto para aprender SASS</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Alquiler-casas-sass - 0.0.1</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="componentes"><a href="#componentes">componentes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="componentes-css"><a href="#componentes-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="componentes" data-name=".booking" data-type="css"><a href="#componentes-css-.booking">.booking</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name=".card" data-type="css"><a href="#componentes-css-.card">.card</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#carrusel" data-type="css"><a href="#componentes-css-#carrusel">#carrusel</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#texto-carrusel" data-type="css"><a href="#componentes-css-#texto-carrusel">#texto-carrusel</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#contactanos" data-type="css"><a href="#componentes-css-#contactanos">#contactanos</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#destinos" data-type="css"><a href="#componentes-css-#destinos">#destinos</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name=".footer" data-type="css"><a href="#componentes-css-.footer">.footer</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name=".header" data-type="css"><a href="#componentes-css-.header">.header</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#novedades" data-type="css"><a href="#componentes-css-#novedades">#novedades</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name=".parallax" data-type="css"><a href="#componentes-css-.parallax">.parallax</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#servicios" data-type="css"><a href="#componentes-css-#servicios">#servicios</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#valoraciones" data-type="css"><a href="#componentes-css-#valoraciones">#valoraciones</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="header" data-type="css"><a href="#componentes-css-header">header</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="main" data-type="css"><a href="#componentes-css-main">main</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="footer" data-type="css"><a href="#componentes-css-footer">footer</a></li><li class="sidebar__item sassdoc__item" data-group="componentes" data-name="#details-container" data-type="css"><a href="#componentes-css-#details-container">#details-container</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="configuración"><a href="#configuración">configuración</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="configuración-css"><a href="#configuración-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="*" data-type="css"><a href="#configuración-css-*">*</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="html" data-type="css"><a href="#configuración-css-html">html</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="body" data-type="css"><a href="#configuración-css-body">body</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="h1,
+h2,
+h3,
+h4,
+h5,
+h6" data-type="css"><a href="#configuración-css-h1,
+h2,
+h3,
+h4,
+h5,
+h6">h1, h2, h3, h4, h5, h6</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="p" data-type="css"><a href="#configuración-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="ul" data-type="css"><a href="#configuración-css-ul">ul</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="li" data-type="css"><a href="#configuración-css-li">li</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="a" data-type="css"><a href="#configuración-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="img" data-type="css"><a href="#configuración-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="button" data-type="css"><a href="#configuración-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="configuración" data-name="input,
+textarea,
+select,
+button" data-type="css"><a href="#configuración-css-input,
+textarea,
+select,
+button">input, textarea, select, button</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="mixins"><a href="#mixins">mixins</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="mixins-mixin"><a href="#mixins-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="flexbox" data-type="mixin"><a href="#mixins-mixin-flexbox">flexbox</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="grid-card" data-type="mixin"><a href="#mixins-mixin-grid-card">grid-card</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="button" data-type="mixin"><a href="#mixins-mixin-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="subtitle" data-type="mixin"><a href="#mixins-mixin-subtitle">subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="card-base" data-type="mixin"><a href="#mixins-mixin-card-base">card-base</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="card-base-body" data-type="mixin"><a href="#mixins-mixin-card-base-body">card-base-body</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="carrusel" data-type="mixin"><a href="#mixins-mixin-carrusel">carrusel</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="slider" data-type="mixin"><a href="#mixins-mixin-slider">slider</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="form" data-type="css"><a href="#undefined-css-form">form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input,
+    select" data-type="css"><a href="#undefined-css-input,
+    select">input, select</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;[type=&quot;text&quot;]" data-type="css"><a href="#undefined-css-&amp;[type=&quot;text&quot;]">&amp;[type=&quot;text&quot;]</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::placeholder" data-type="css"><a href="#undefined-css-&amp;::placeholder">&amp;::placeholder</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:focus" data-type="css"><a href="#undefined-css-&amp;:focus">&amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="details" data-type="css"><a href="#undefined-css-details">details</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#personas" data-type="css"><a href="#undefined-css-#personas">#personas</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="option" data-type="css"><a href="#undefined-css-option">option</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="option" data-type="css"><a href="#undefined-css-option">option</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="form" data-type="css"><a href="#undefined-css-form">form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button" data-type="css"><a href="#undefined-css-input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button">input[type=&quot;date&quot;], input[type=&quot;text&quot;], #personas, button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="details" data-type="css"><a href="#undefined-css-details">details</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button" data-type="css"><a href="#undefined-css-label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button">label, input[type=&quot;date&quot;], input[type=&quot;text&quot;], select, button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="label,
+      input[type=&quot;date&quot;],
+      select,
+      button" data-type="css"><a href="#undefined-css-label,
+      input[type=&quot;date&quot;],
+      select,
+      button">label, input[type=&quot;date&quot;], select, button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h3" data-type="css"><a href="#undefined-css-h3">h3</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p,
+  ul" data-type="css"><a href="#undefined-css-p,
+  ul">p, ul</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="ul" data-type="css"><a href="#undefined-css-ul">ul</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="li" data-type="css"><a href="#undefined-css-li">li</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:before" data-type="css"><a href="#undefined-css-&amp;:before">&amp;:before</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1" data-type="css"><a href="#undefined-css-position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1">position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); color: $bg-color; background: rgba(0, 0, 0, 0.5); padding: $base-padding; text-align: center; border-radius: 5px; /// Estilos para los encabezados h1 dentro de texto-carrusel /// @group componentes h1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h1" data-type="css"><a href="#undefined-css-h1">h1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h1" data-type="css"><a href="#undefined-css-h1">h1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2" data-type="css"><a href="#undefined-css-padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2">padding: $header-height 0 0 0; background-color: #f3f3f3; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); max-width: 99%; margin: $base-margin * 5 auto; /// Estilos para el título de la sección de contacto /// @group componentes h2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h2" data-type="css"><a href="#undefined-css-h2">h2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="form" data-type="css"><a href="#undefined-css-form">form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="label" data-type="css"><a href="#undefined-css-label">label</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input,
+    textarea" data-type="css"><a href="#undefined-css-input,
+    textarea">input, textarea</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:focus" data-type="css"><a href="#undefined-css-&amp;:focus">&amp;:focus</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="textarea" data-type="css"><a href="#undefined-css-textarea">textarea</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle" data-type="css"><a href="#undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de destinos /// @group componentes .subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".subtitle" data-type="css"><a href="#undefined-css-.subtitle">.subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container-cards" data-type="css"><a href="#undefined-css-.container-cards">.container-cards</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer-card" data-type="css"><a href="#undefined-css-.footer-card">.footer-card</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#menu,
+  #rrss" data-type="css"><a href="#undefined-css-#menu,
+  #rrss">#menu, #rrss</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="a" data-type="css"><a href="#undefined-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__logo" data-type="css"><a href="#undefined-css-&amp;__logo">&amp;__logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__link" data-type="css"><a href="#undefined-css-&amp;__link">&amp;__link</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__link-margin" data-type="css"><a href="#undefined-css-&amp;__link-margin">&amp;__link-margin</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;--translucent" data-type="css"><a href="#undefined-css-&amp;--translucent">&amp;--translucent</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__logo" data-type="css"><a href="#undefined-css-&amp;__logo">&amp;__logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__link" data-type="css"><a href="#undefined-css-&amp;__link">&amp;__link</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__link-margin" data-type="css"><a href="#undefined-css-&amp;__link-margin">&amp;__link-margin</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle" data-type="css"><a href="#undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de novedades /// @group componentes .subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".subtitle" data-type="css"><a href="#undefined-css-.subtitle">.subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container-cards" data-type="css"><a href="#undefined-css-.container-cards">.container-cards</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".novedades" data-type="css"><a href="#undefined-css-.novedades">.novedades</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile)" data-type="css"><a href="#undefined-css-height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile)">height: 92vh; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; /// Ajusta los estilos del efecto parallax para dispositivos móviles /// @group componentes @media (max-width: $mobile)</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle" data-type="css"><a href="#undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de servicios /// @group componentes .subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".subtitle" data-type="css"><a href="#undefined-css-.subtitle">.subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container-cards" data-type="css"><a href="#undefined-css-.container-cards">.container-cards</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".card-service" data-type="css"><a href="#undefined-css-.card-service">.card-service</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle" data-type="css"><a href="#undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de valoraciones /// @group componentes .subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".subtitle" data-type="css"><a href="#undefined-css-.subtitle">.subtitle</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container-cards" data-type="css"><a href="#undefined-css-.container-cards">.container-cards</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".opinion" data-type="css"><a href="#undefined-css-.opinion">.opinion</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".text-bold" data-type="css"><a href="#undefined-css-.text-bold">.text-bold</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".stars" data-type="css"><a href="#undefined-css-.stars">.stars</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h3" data-type="css"><a href="#undefined-css-h3">h3</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.rating" data-type="css"><a href="#undefined-css-&amp;.rating">&amp;.rating</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::after" data-type="css"><a href="#undefined-css-&amp;::after">&amp;::after</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;.price" data-type="css"><a href="#undefined-css-&amp;.price">&amp;.price</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="ul" data-type="css"><a href="#undefined-css-ul">ul</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="li" data-type="css"><a href="#undefined-css-li">li</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:hover" data-type="css"><a href="#undefined-css-&amp;:hover">&amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;:visited" data-type="css"><a href="#undefined-css-&amp;:visited">&amp;:visited</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="base-margin" data-type="variable"><a href="#undefined-variable-base-margin">base-margin</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="base-padding" data-type="variable"><a href="#undefined-variable-base-padding">base-padding</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family" data-type="variable"><a href="#undefined-variable-font-family">font-family</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family-headings" data-type="variable"><a href="#undefined-variable-font-family-headings">font-family-headings</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-size" data-type="variable"><a href="#undefined-variable-font-size">font-size</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="bg-color" data-type="variable"><a href="#undefined-variable-bg-color">bg-color</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="max-width" data-type="variable"><a href="#undefined-variable-max-width">max-width</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-height" data-type="variable"><a href="#undefined-variable-header-height">header-height</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-text-color" data-type="variable"><a href="#undefined-variable-header-text-color">header-text-color</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-font-family" data-type="variable"><a href="#undefined-variable-header-font-family">header-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-font-size" data-type="variable"><a href="#undefined-variable-header-font-size">header-font-size</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-link-hover-color" data-type="variable"><a href="#undefined-variable-header-link-hover-color">header-link-hover-color</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color-background" data-type="variable"><a href="#undefined-variable-color-background">color-background</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color-text" data-type="variable"><a href="#undefined-variable-color-text">color-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color-shadow-light" data-type="variable"><a href="#undefined-variable-color-shadow-light">color-shadow-light</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color-shadow-dark" data-type="variable"><a href="#undefined-variable-color-shadow-dark">color-shadow-dark</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="mobile" data-type="variable"><a href="#undefined-variable-mobile">mobile</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="componentes"><div class="container">componentes</div></h1><section class="main__sub-section" id="componentes-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="componentes-css-.booking"><h3 class="item__heading"><a class="item__name" href="#css-.booking">.booking</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.booking {
+  padding: $base-padding;
+  border-top: 2px solid #ddd;
+  max-width: $max-width;
+  margin: auto;
+
+  /// Estilos para el formulario dentro del contenedor de reservas
+  /// @group componentes
+  form {
+    @include flexbox(flex, row, center, space-between);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+    /// Estilos para los campos de entrada y selección dentro del formulario
+    /// @group componentes
+    input,
+    select {
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      /// Estilos para los campos de texto dentro del formulario
+      /// @group componentes
+      &amp;[type=&quot;text&quot;] {
+        width: 20rem;
+        padding: math.div($base-padding, 2);
+        font-size: $font-size;
+      }
+
+      /// Estilos para el marcador de posición dentro de los campos de entrada
+      /// @group componentes
+      &amp;::placeholder {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      /// Estilos para los campos de entrada en foco
+      /// @group componentes
+      &amp;:focus {
+        border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+      }
+    }
+
+    /// Estilos para los detalles dentro del formulario
+    /// @group componentes
+    details {
+      display: none;
+    }
+
+    /// Estilos para el selector de personas dentro del formulario
+    /// @group componentes
+    #personas {
+      width: 4rem;
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      /// Estilos para las opciones dentro del selector de personas
+      /// @group componentes
+      option {
+        text-align: center;
+      }
+    }
+
+    /// Estilos para las opciones dentro del formulario
+    /// @group componentes
+    option {
+      text-align: center;
+    }
+
+    /// Estilos para el botón dentro del formulario
+    /// @group componentes
+    button {
+      @include button($font-size, 0.5rem);
+
+      /// Estilos para el botón al pasar el ratón
+      /// @group componentes
+      &amp;:hover {
+        background-color: #444;
+      }
+    }
+  }
+
+  /// Estilos para el contenedor de reservas en pantallas pequeñas
+  /// @group componentes
+  @media (max-width: $mobile) {
+    margin-top: $base-margin * 7;
+
+    /// Estilos para el formulario en pantallas pequeñas
+    /// @group componentes
+    form {
+      width: 100%;
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button {
+        width: 100%;
+        padding: auto;
+        margin: math.div($base-margin, 2) auto;
+      }
+
+      /// Estilos para los detalles en pantallas pequeñas
+      /// @group componentes
+      details {
+        display: block;
+        width: 100%;
+        z-index: 10;
+        background-color: $bg-color;
+
+        /// Estilos para los campos de entrada y botón dentro de los detalles en pantallas pequeñas
+        /// @group componentes
+        label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button {
+          display: block;
+        }
+      }
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      label,
+      input[type=&quot;date&quot;],
+      select,
+      button {
+        display: none;
+      }
+    }
+  }
+}</code>" data-collapsed=".booking { ... }"><code>.booking { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de reservas</p></div></section><section class="main__item container item" id="componentes-css-.card"><h3 class="item__heading"><a class="item__name" href="#css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  /// Aplica los estilos base de la tarjeta
+  /// @group componentes
+  @include card-base();
+
+  /// Estilos para las imágenes dentro de la tarjeta
+  /// @group componentes
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /// Estilos para los encabezados h3 dentro de la tarjeta
+  /// @group componentes
+  h3 {
+    margin: 10px 20px;
+    font-size: $font-size * 1.1;
+    font-weight: bold;
+    color: $color-text;
+  }
+
+  /// Estilos para los párrafos y listas dentro de la tarjeta
+  /// @group componentes
+  p,
+  ul {
+    flex-grow: 1;
+  }
+
+  /// Estilos para los párrafos dentro de la tarjeta
+  /// @group componentes
+  p {
+    margin: 10px 20px;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  /// Estilos para las listas dentro de la tarjeta
+  /// @group componentes
+  ul {
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    /// Estilos para los elementos de lista dentro de la tarjeta
+    /// @group componentes
+    li {
+      margin-bottom: 5px;
+      font-size: $font-size * 0.9;
+      color: $color-text;
+
+      /// Estilos para el pseudo-elemento before de los elementos de lista
+      /// @group componentes
+      &amp;:before {
+        content: &quot;•&quot;;
+        margin-right: 5px;
+      }
+    }
+  }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la tarjeta</p></div></section><section class="main__item container item" id="componentes-css-#carrusel"><h3 class="item__heading"><a class="item__name" href="#css-#carrusel">#carrusel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#carrusel {
+  /// Aplica los estilos del carrusel
+  /// @group componentes
+  @include carrusel(75vh);
+
+  /// Ajusta la altura del carrusel en dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    @include carrusel(30vh);
+  }
+}</code>" data-collapsed="#carrusel { ... }"><code>#carrusel { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para carrusel</p></div></section><section class="main__item container item" id="componentes-css-#texto-carrusel"><h3 class="item__heading"><a class="item__name" href="#css-#texto-carrusel">#texto-carrusel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#texto-carrusel {
+  /// Posiciona y estiliza el contenedor de texto
+  /// @group componentes
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1 {
+    font-size: $font-size * 2;
+    padding: $base-padding;
+  }
+
+  /// Estilos para los párrafos dentro de texto-carrusel
+  /// @group componentes
+  p {
+    font-size: $font-size * 1.5;
+    padding: $base-padding;
+  }
+
+  /// Ajusta la posición, tamaño y estilos de texto en dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0;
+
+    /// Ajusta el tamaño de fuente y padding de los encabezados h1 en dispositivos móviles
+    /// @group componentes
+    h1 {
+      font-size: $font-size * 1.1;
+      padding: auto;
+    }
+
+    /// Ajusta el tamaño de fuente de los párrafos en dispositivos móviles
+    /// @group componentes
+    p {
+      font-size: $font-size * 0.9;
+    }
+  }
+}</code>" data-collapsed="#texto-carrusel { ... }"><code>#texto-carrusel { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para texto-carrusel</p></div></section><section class="main__item container item" id="componentes-css-#contactanos"><h3 class="item__heading"><a class="item__name" href="#css-#contactanos">#contactanos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#contactanos {
+  /// Estilos base para el contenedor de contacto
+  /// @group componentes
+  padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2 {
+    color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.7;
+    margin-bottom: 1em;
+  }
+
+  /// Estilos para el texto de la sección de contacto
+  /// @group componentes
+  p {
+    color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.2;
+    margin-bottom: 2em;
+  }
+
+  /// Estilos para el formulario de contacto
+  /// @group componentes
+  form {
+    @include flexbox(flex, column, center, center);
+
+    /// Estilos para las etiquetas del formulario de contacto
+    /// @group componentes
+    label {
+      margin-bottom: 0.5em;
+      color: $color-text;
+      font-weight: bold;
+      font-size: $font-size * 1.2;
+    }
+
+    /// Estilos para los campos de entrada y áreas de texto del formulario de contacto
+    /// @group componentes
+    input,
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 1em;
+      padding: 0.75em;
+      border: 1px solid #ced4da;
+      border-radius: 2px;
+
+      /// Estilos para el estado de enfoque de los campos de entrada y áreas de texto
+      /// @group componentes
+      &amp;:focus {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    /// Estilos adicionales para las áreas de texto del formulario de contacto
+    /// @group componentes
+    textarea {
+      resize: none;
+      min-height: 20rem;
+      scrollbar-width: auto;
+    }
+
+    /// Estilos para el botón de envío del formulario de contacto
+    /// @group componentes
+    button {
+      @include button(1.3rem, 0.5rem);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de contacto para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    h2 {
+      font-size: $font-size * 1.2;
+    }
+
+    form {
+      textarea {
+        min-height: 8rem;
+      }
+
+      button {
+        @include button(1rem, 0.5rem);
+      }
+    }
+  }
+}</code>" data-collapsed="#contactanos { ... }"><code>#contactanos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la sección de contacto</p></div></section><section class="main__item container item" id="componentes-css-#destinos"><h3 class="item__heading"><a class="item__name" href="#css-#destinos">#destinos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#destinos {
+  /// Estilos base para el contenedor de destinos
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle {
+    font-size: $font-size * 1.7;
+    text-align: center;
+    color: $color-text;
+    border-bottom: 3px solid $color-text;
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de destinos
+  /// @group componentes
+  .container-cards {
+    @include grid-card(300px, 20px);
+
+    /// Estilos para el pie de página de las tarjetas dentro del contenedor de tarjetas
+    /// @group componentes
+    .footer-card {
+      @include flexbox(flex, row, center, space-around);
+      font-weight: bold;
+
+      /// Estilos para el botón dentro del pie de página de las tarjetas
+      /// @group componentes
+      button {
+        @include button($font-size, 0.5rem);
+        margin-right: $base-margin;
+      }
+    }
+  }
+
+  /// Ajusta los estilos de la sección de destinos para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}</code>" data-collapsed="#destinos { ... }"><code>#destinos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la sección de destinos</p></div></section><section class="main__item container item" id="componentes-css-.footer"><h3 class="item__heading"><a class="item__name" href="#css-.footer">.footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer {
+  /// Estilos base para el pie de página
+  /// @group componentes
+  @include flexbox(flex, row, center, center);
+  color: $color-text;
+  padding: $base-padding;
+  text-align: center;
+  font-size: $font-size * 0.9;
+
+  /// Estilos para #menu y #rrss dentro del pie de página
+  /// @group componentes
+  #menu,
+  #rrss {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    width: 100%;
+
+    /// Estilos para los enlaces dentro de #menu y #rrss
+    /// @group componentes
+    a {
+      margin: 0 $base-margin;
+      transition: color 0.2s ease-in-out;
+
+      /// Estilos para el estado de hover de los enlaces
+      /// @group componentes
+      &amp;:hover {
+        color: #6c757d;
+      }
+    }
+  }
+
+  /// Estilos para los párrafos dentro del pie de página
+  /// @group componentes
+  p {
+    margin-bottom: 1em;
+    width: 100%;
+    padding-top: 1em;
+  }
+
+  /// Estilos para las imágenes dentro del pie de página
+  /// @group componentes
+  img {
+    height: 2rem;
+    width: 2rem;
+
+    /// Estilos para el estado de hover de las imágenes
+    /// @group componentes
+    &amp;:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  /// Ajusta los estilos del pie de página para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}</code>" data-collapsed=".footer { ... }"><code>.footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para .footer</p></div></section><section class="main__item container item" id="componentes-css-.header"><h3 class="item__heading"><a class="item__name" href="#css-.header">.header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header {
+  /// Estilos base para el encabezado
+  /// @group componentes
+  @include flexbox(flex, row, center, space-between);
+  background-color: rgb(255, 255, 255, 1);
+  transition: background-color 0.2s ease-in-out;
+
+  /// Estilos para el logo dentro del encabezado
+  /// @group componentes
+  &amp;__logo {
+    margin: $base-margin 0;
+    font-size: $font-size * 2;
+  }
+
+  /// Estilos para los enlaces dentro del encabezado
+  /// @group componentes
+  &amp;__link {
+
+    /// Estilos para el estado de hover de los enlaces
+    /// @group componentes
+    &amp;:hover {
+      border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 2px;
+    }
+  }
+
+  /// Estilos para los enlaces con margen dentro del encabezado
+  /// @group componentes
+  &amp;__link-margin {
+    margin: $base-margin $base-margin * 2;
+  }
+
+  /// Estilos para el encabezado translúcido
+  /// @group componentes
+  &amp;--translucent {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  /// Ajusta los estilos del encabezado para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    flex-direction: column;
+
+    /// Ajusta los estilos del logo para dispositivos móviles
+    /// @group componentes
+    &amp;__logo {
+      margin: math.div($base-margin, 2) auto;
+      font-size: $font-size * 1.4;
+    }
+
+    /// Ajusta los estilos de los enlaces para dispositivos móviles
+    /// @group componentes
+    &amp;__link {
+      font-size: $font-size * 1;
+      padding-bottom: 0;
+    }
+
+    /// Ajusta los estilos de los enlaces con margen para dispositivos móviles
+    /// @group componentes
+    &amp;__link-margin {
+      margin: auto $base-margin;
+    }
+  }
+}</code>" data-collapsed=".header { ... }"><code>.header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para .header</p></div></section><section class="main__item container item" id="componentes-css-#novedades"><h3 class="item__heading"><a class="item__name" href="#css-#novedades">#novedades</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#novedades {
+  /// Estilos base para el contenedor de novedades
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de novedades
+  /// @group componentes
+  .container-cards {
+    @include grid-card(400px, 20px);
+
+    /// Estilos para las tarjetas de novedades dentro del contenedor de tarjetas
+    /// @group componentes
+    .novedades {
+      @include card-base();
+      @include card-base-body(17rem, cover, $font-size);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de novedades para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}</code>" data-collapsed="#novedades { ... }"><code>#novedades { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la sección de novedades</p></div></section><section class="main__item container item" id="componentes-css-.parallax"><h3 class="item__heading"><a class="item__name" href="#css-.parallax">.parallax</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.parallax {
+  /// Estilos base para el efecto parallax
+  /// @group componentes
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    height: 40vh;
+    background-size: cover;
+  }
+}</code>" data-collapsed=".parallax { ... }"><code>.parallax { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para .parallax</p></div></section><section class="main__item container item" id="componentes-css-#servicios"><h3 class="item__heading"><a class="item__name" href="#css-#servicios">#servicios</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#servicios {
+  /// Estilos base para el contenedor de servicios
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de servicios
+  /// @group componentes
+  .container-cards {
+    @include grid-card(200px, 20px);
+    @include slider();
+
+    /// Estilos para las tarjetas de servicios dentro del contenedor de tarjetas
+    /// @group componentes
+    .card-service {
+      @include card-base();
+      @include card-base-body(200px, contain, $font-size);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de servicios para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}</code>" data-collapsed="#servicios { ... }"><code>#servicios { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la sección de servicios</p></div></section><section class="main__item container item" id="componentes-css-#valoraciones"><h3 class="item__heading"><a class="item__name" href="#css-#valoraciones">#valoraciones</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#valoraciones {
+  /// Estilos base para el contenedor de valoraciones
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para los párrafos dentro de la sección de valoraciones
+  /// @group componentes
+  p {
+    font-size: $font-size * 1.2;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de valoraciones
+  /// @group componentes
+  .container-cards {
+    @include grid-card(220px, 76px);
+
+    /// Estilos para las tarjetas de opiniones dentro del contenedor de tarjetas
+    /// @group componentes
+    .opinion {
+      @include card-base-body(17rem, cover, $font-size);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+      /// Estilos para el texto en negrita dentro de las tarjetas de opiniones
+      /// @group componentes
+      .text-bold {
+        font-weight: bold;
+      }
+
+      /// Estilos para las estrellas dentro de las tarjetas de opiniones
+      /// @group componentes
+      .stars {
+        font-size: $font-size * 1.2;
+        color: #f1c40f;
+      }
+    }
+  }
+
+  /// Ajusta los estilos de la sección de valoraciones para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+
+    p {
+      font-size: $font-size * 1;
+    }
+  }
+}</code>" data-collapsed="#valoraciones { ... }"><code>#valoraciones { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Contenedor principal para la sección de valoraciones</p></div></section><section class="main__item container item" id="componentes-css-header"><h3 class="item__heading"><a class="item__name" href="#css-header">header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>header {
+  width: 100%;
+    max-width: $max-width;
+    padding: $base-padding 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: $header-height;
+    font-family: $header-font-family;
+    font-size: $header-font-size;
+    color: $header-text-color;
+
+    /// Estilos para el encabezado en pantallas pequeñas
+    /// @group componentes
+    @media (max-width: $mobile) {
+        height: auto;
+        padding: auto;
+        margin: auto;
+    }
+}</code>" data-collapsed="header { ... }"><code>header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el encabezado</p></div></section><section class="main__item container item" id="componentes-css-main"><h3 class="item__heading"><a class="item__name" href="#css-main">main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>main {
+  width: 100%;
+    max-width: $max-width;
+    margin-top: $header-height;
+}</code>" data-collapsed="main { ... }"><code>main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenido principal</p></div></section><section class="main__item container item" id="componentes-css-footer"><h3 class="item__heading"><a class="item__name" href="#css-footer">footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>footer {
+  width: 100%;
+    max-width: $max-width;
+    bottom: 0;
+}</code>" data-collapsed="footer { ... }"><code>footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el pie de página</p></div></section><section class="main__item container item" id="componentes-css-#details-container"><h3 class="item__heading"><a class="item__name" href="#css-#details-container">#details-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#details-container {
+  max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 $base-padding;
+
+    /// Estilos para las imágenes dentro del contenedor de detalles
+    /// @group componentes
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /// Estilos para los encabezados h3 dentro del contenedor de detalles
+    /// @group componentes
+    h3 {
+        font-size: $font-size * 1.8;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    /// Estilos para los párrafos dentro del contenedor de detalles
+    /// @group componentes
+    p {
+        font-size: $font-size * 1;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 1em;
+
+        /// Estilos para los párrafos de calificación dentro del contenedor de detalles
+        /// @group componentes
+        &amp;.rating {
+            font-size: $font-size * 1.4;
+            font-weight: bold;
+
+            /// Estilos para el pseudo-elemento after de los párrafos de calificación
+            /// @group componentes
+            &amp;::after {
+                content: &quot;★★★★☆&quot;;
+                color: #f1c40f;
+            }
+            /// Estilos para los párrafos de precio dentro del contenedor de detalles
+            /// @group componentes
+            &amp;.price {
+                font-size: $font-size * 1.5;
+                font-weight: bold;
+                position: relative;
+            }
+        }
+    }
+
+    /// Estilos para las listas dentro del contenedor de detalles
+    /// @group componentes
+    ul {
+        margin-bottom: 1em;
+
+        /// Estilos para los elementos de lista dentro del contenedor de detalles
+        /// @group componentes
+        li {
+            margin: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+            /// Estilos para los elementos de lista al pasar el ratón
+            /// @group componentes
+            &amp;:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    /// Estilos para el contenedor de detalles en pantallas pequeñas
+    /// @group componentes
+    @media (max-width: 768px) {
+        #details-container {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 80%;
+        }
+
+        h3 {
+            font-size: $font-size * 1.3;
+        }
+
+        p {
+            font-size: $font-size * 1;
+
+            &amp;.price {
+                font-size: $font-size * 1.2;
+            }
+
+            &amp;.rating {
+                font-size: $font-size * 1.1;
+            }
+        }
+
+        ul li {
+            font-size: $font-size;
+        }
+    }
+}</code>" data-collapsed="#details-container { ... }"><code>#details-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de detalles</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="configuración"><div class="container">configuración</div></h1><section class="main__sub-section" id="configuración-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="configuración-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Resetea los estilos por defecto del navegador</p></div></section><section class="main__item container item" id="configuración-css-html"><h3 class="item__heading"><a class="item__name" href="#css-html">html</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>html {
+  scroll-behavior: smooth;
+}</code>" data-collapsed="html { ... }"><code>html { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Establece el comportamiento de desplazamiento suave</p></div></section><section class="main__item container item" id="configuración-css-body"><h3 class="item__heading"><a class="item__name" href="#css-body">body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body {
+  font-family: $font-family;
+    font-size: $font-size;
+    background-color: $bg-color;
+    max-width: $max-width;
+    margin: 8vh auto 0 auto;
+    min-height: 100vh;
+}</code>" data-collapsed="body { ... }"><code>body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el cuerpo del documento</p></div></section><section class="main__item container item" id="configuración-css-h1,
+h2,
+h3,
+h4,
+h5,
+h6"><h3 class="item__heading"><a class="item__name" href="#css-h1,
+h2,
+h3,
+h4,
+h5,
+h6">h1, h2, h3, h4, h5, h6</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+    font-weight: inherit;
+    font-size: inherit;
+    margin-bottom: $base-margin;
+}</code>" data-collapsed="h1,
+h2,
+h3,
+h4,
+h5,
+h6 { ... }"><code>h1,
+h2,
+h3,
+h4,
+h5,
+h6 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los encabezados</p></div></section><section class="main__item container item" id="configuración-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  margin-bottom: $base-margin;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los párrafos</p></div></section><section class="main__item container item" id="configuración-css-ul"><h3 class="item__heading"><a class="item__name" href="#css-ul">ul</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>ul {
+  list-style: none;
+}</code>" data-collapsed="ul { ... }"><code>ul { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Elimina los estilos de lista por defecto</p></div></section><section class="main__item container item" id="configuración-css-li"><h3 class="item__heading"><a class="item__name" href="#css-li">li</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>li {
+  display: inline-block;
+    text-decoration: none;
+}</code>" data-collapsed="li { ... }"><code>li { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los elementos de lista</p></div></section><section class="main__item container item" id="configuración-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  color: inherit;
+    text-decoration: none;
+
+    /// Estilos para los enlaces visitados
+    /// @group configuración
+    &amp;:visited {
+        color: inherit;
+    }
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los enlaces</p></div></section><section class="main__item container item" id="configuración-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  max-width: 100%;
+    height: auto;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para las imágenes</p></div></section><section class="main__item container item" id="configuración-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  cursor: pointer;
+    border: none;
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los botones</p></div></section><section class="main__item container item" id="configuración-css-input,
+textarea,
+select,
+button"><h3 class="item__heading"><a class="item__name" href="#css-input,
+textarea,
+select,
+button">input, textarea, select, button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input,
+textarea,
+select,
+button {
+  outline: none;
+    font-family: inherit;
+}</code>" data-collapsed="input,
+textarea,
+select,
+button { ... }"><code>input,
+textarea,
+select,
+button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para los campos de entrada y botones</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="mixins"><div class="container">mixins</div></h1><section class="main__sub-section" id="mixins-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="mixins-mixin-flexbox"><h3 class="item__heading"><a class="item__name" href="#mixin-flexbox">flexbox</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flexbox($display, $direction, $item, $justify) { 
+  display: $display;
+  flex-direction: $direction;
+  align-items: $item;
+  justify-content: $justify;
+ }" data-collapsed="@mixin flexbox($display, $direction, $item, $justify) { ... }"><code>@mixin flexbox($display, $direction, $item, $justify) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para establecer propiedades de flexbox</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$display</code></th><td data-label="desc"><p>Tipo de display</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Dirección del flujo de elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$item</code></th><td data-label="desc"><p>Alineación de los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><p>Justificación del contenido</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="mixins-mixin-grid-card"><h3 class="item__heading"><a class="item__name" href="#mixin-grid-card">grid-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin grid-card($size, $gap) { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+  gap: $gap;
+  justify-items: center;
+ }" data-collapsed="@mixin grid-card($size, $gap) { ... }"><code>@mixin grid-card($size, $gap) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para crear una cuadrícula de tarjetas</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Tamaño mínimo de las tarjetas</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gap</code></th><td data-label="desc"><p>Espacio entre las tarjetas</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="mixins-mixin-button"><h3 class="item__heading"><a class="item__name" href="#mixin-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button($font-size, $padding) { 
+  background-color: #333;
+  color: $bg-color;
+  font-weight: bold;
+  font-size: $font-size;
+  border: none;
+  padding: $padding $padding * 2;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+ }" data-collapsed="@mixin button($font-size, $padding) { ... }"><code>@mixin button($font-size, $padding) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estilizar botones</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-size</code></th><td data-label="desc"><p>Tamaño de fuente del botón</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$padding</code></th><td data-label="desc"><p>Relleno del botón</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-bg-color"><code>bg-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-font-size"><code>font-size</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-subtitle"><h3 class="item__heading"><a class="item__name" href="#mixin-subtitle">subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin subtitle() { 
+  font-size: $font-size * 1.7;
+  text-align: center;
+  color: $color-text;
+  border-bottom: 3px solid $color-text;
+ }" data-collapsed="@mixin subtitle() { ... }"><code>@mixin subtitle() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estilizar subtítulos</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-font-size"><code>font-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-text"><code>color-text</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-text"><code>color-text</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-card-base"><h3 class="item__heading"><a class="item__name" href="#mixin-card-base">card-base</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin card-base() { 
+  background-color: $color-background;
+  border-radius: 5px;
+  box-shadow: 0 0 10px $color-shadow-light;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  &amp;:hover {
+    box-shadow: 0 0 20px $color-shadow-dark;
+    transform: translateY(-5px);
+  }
+ }" data-collapsed="@mixin card-base() { ... }"><code>@mixin card-base() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estilizar la base de las tarjetas</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-background"><code>color-background</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-shadow-light"><code>color-shadow-light</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-shadow-dark"><code>color-shadow-dark</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-card-base-body"><h3 class="item__heading"><a class="item__name" href="#mixin-card-base-body">card-base-body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin card-base-body($img-height, $object-fit, $size) { 
+  img {
+    width: 100%;
+    height: $img-height;
+    object-fit: $object-fit;
+  }
+
+  h3,
+  p {
+    justify-self: center;
+  }
+
+  h3 {
+    margin: $base-margin;
+    font-size: $size * 1.1;
+    color: $color-text;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0 $base-margin;
+    font-size: $size * 0.9;
+    color: $color-text;
+    line-height: 1.5;
+    padding-bottom: $base-padding;
+  }
+ }" data-collapsed="@mixin card-base-body($img-height, $object-fit, $size) { ... }"><code>@mixin card-base-body($img-height, $object-fit, $size) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para estilizar el cuerpo de las tarjetas</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$img-height</code></th><td data-label="desc"><p>Altura de las imágenes de las tarjetas</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$object-fit</code></th><td data-label="desc"><p>Ajuste del objeto de las imágenes</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Tamaño de fuente del texto de las tarjetas</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-base-margin"><code>base-margin</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-text"><code>color-text</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-base-margin"><code>base-margin</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-text"><code>color-text</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-base-padding"><code>base-padding</code></a></li></ul></section><section class="main__item container item" id="mixins-mixin-carrusel"><h3 class="item__heading"><a class="item__name" href="#mixin-carrusel">carrusel</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin carrusel($height) { 
+  max-height: $height;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+
+  .slide {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+
+    img {
+      width: 100%;
+      object-fit: fill;
+      height: 100%;
+    }
+  }
+ }" data-collapsed="@mixin carrusel($height) { ... }"><code>@mixin carrusel($height) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para crear un carrusel</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>Altura del carrusel</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section><section class="main__item container item" id="mixins-mixin-slider"><h3 class="item__heading"><a class="item__name" href="#mixin-slider">slider</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin slider() { 
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  -webkit-overflow-scrolling: touch;
+
+  .card-service {
+    flex: none;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-right: $base-margin;
+    max-width: 200px;
+  }
+ }" data-collapsed="@mixin slider() { ... }"><code>@mixin slider() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para crear un slider</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-base-margin"><code>base-margin</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-form"><h3 class="item__heading"><a class="item__name" href="#css-form">form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>form {
+  @include flexbox(flex, row, center, space-between);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+    /// Estilos para los campos de entrada y selección dentro del formulario
+    /// @group componentes
+    input,
+    select {
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      /// Estilos para los campos de texto dentro del formulario
+      /// @group componentes
+      &amp;[type=&quot;text&quot;] {
+        width: 20rem;
+        padding: math.div($base-padding, 2);
+        font-size: $font-size;
+      }
+
+      /// Estilos para el marcador de posición dentro de los campos de entrada
+      /// @group componentes
+      &amp;::placeholder {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      /// Estilos para los campos de entrada en foco
+      /// @group componentes
+      &amp;:focus {
+        border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+      }
+    }
+
+    /// Estilos para los detalles dentro del formulario
+    /// @group componentes
+    details {
+      display: none;
+    }
+
+    /// Estilos para el selector de personas dentro del formulario
+    /// @group componentes
+    #personas {
+      width: 4rem;
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      /// Estilos para las opciones dentro del selector de personas
+      /// @group componentes
+      option {
+        text-align: center;
+      }
+    }
+
+    /// Estilos para las opciones dentro del formulario
+    /// @group componentes
+    option {
+      text-align: center;
+    }
+
+    /// Estilos para el botón dentro del formulario
+    /// @group componentes
+    button {
+      @include button($font-size, 0.5rem);
+
+      /// Estilos para el botón al pasar el ratón
+      /// @group componentes
+      &amp;:hover {
+        background-color: #444;
+      }
+    }
+}</code>" data-collapsed="form { ... }"><code>form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el formulario dentro del contenedor de reservas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-input,
+    select"><h3 class="item__heading"><a class="item__name" href="#css-input,
+    select">input, select</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input,
+    select {
+  padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      /// Estilos para los campos de texto dentro del formulario
+      /// @group componentes
+      &amp;[type=&quot;text&quot;] {
+        width: 20rem;
+        padding: math.div($base-padding, 2);
+        font-size: $font-size;
+      }
+
+      /// Estilos para el marcador de posición dentro de los campos de entrada
+      /// @group componentes
+      &amp;::placeholder {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      /// Estilos para los campos de entrada en foco
+      /// @group componentes
+      &amp;:focus {
+        border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+      }
+}</code>" data-collapsed="input,
+    select { ... }"><code>input,
+    select { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada y selección dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;[type=&quot;text&quot;]"><h3 class="item__heading"><a class="item__name" href="#css-&amp;[type=&quot;text&quot;]">&amp;[type=&quot;text&quot;]</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;[type=&quot;text&quot;] {
+  width: 20rem;
+        padding: math.div($base-padding, 2);
+        font-size: $font-size;
+}</code>" data-collapsed="&amp;[type=&quot;text&quot;] { ... }"><code>&amp;[type=&quot;text&quot;] { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de texto dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;::placeholder"><h3 class="item__heading"><a class="item__name" href="#css-&amp;::placeholder">&amp;::placeholder</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::placeholder {
+  font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+}</code>" data-collapsed="&amp;::placeholder { ... }"><code>&amp;::placeholder { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el marcador de posición dentro de los campos de entrada @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:focus"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:focus">&amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:focus {
+  border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+}</code>" data-collapsed="&amp;:focus { ... }"><code>&amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada en foco @group componentes</p></div></section><section class="main__item container item" id="undefined-css-details"><h3 class="item__heading"><a class="item__name" href="#css-details">details</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>details {
+  display: none;
+}</code>" data-collapsed="details { ... }"><code>details { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los detalles dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-#personas"><h3 class="item__heading"><a class="item__name" href="#css-#personas">#personas</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#personas {
+  width: 4rem;
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      /// Estilos para las opciones dentro del selector de personas
+      /// @group componentes
+      option {
+        text-align: center;
+      }
+}</code>" data-collapsed="#personas { ... }"><code>#personas { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el selector de personas dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-option"><h3 class="item__heading"><a class="item__name" href="#css-option">option</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>option {
+  text-align: center;
+}</code>" data-collapsed="option { ... }"><code>option { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las opciones dentro del selector de personas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-option"><h3 class="item__heading"><a class="item__name" href="#css-option">option</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>option {
+  text-align: center;
+}</code>" data-collapsed="option { ... }"><code>option { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las opciones dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  @include button($font-size, 0.5rem);
+
+      /// Estilos para el botón al pasar el ratón
+      /// @group componentes
+      &amp;:hover {
+        background-color: #444;
+      }
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro del formulario @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  background-color: #444;
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón al pasar el ratón @group componentes</p></div></section><section class="main__item container item" id="undefined-css-form"><h3 class="item__heading"><a class="item__name" href="#css-form">form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>form {
+  width: 100%;
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button {
+        width: 100%;
+        padding: auto;
+        margin: math.div($base-margin, 2) auto;
+      }
+
+      /// Estilos para los detalles en pantallas pequeñas
+      /// @group componentes
+      details {
+        display: block;
+        width: 100%;
+        z-index: 10;
+        background-color: $bg-color;
+
+        /// Estilos para los campos de entrada y botón dentro de los detalles en pantallas pequeñas
+        /// @group componentes
+        label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button {
+          display: block;
+        }
+      }
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      label,
+      input[type=&quot;date&quot;],
+      select,
+      button {
+        display: none;
+      }
+}</code>" data-collapsed="form { ... }"><code>form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el formulario en pantallas pequeñas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button"><h3 class="item__heading"><a class="item__name" href="#css-input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button">input[type=&quot;date&quot;], input[type=&quot;text&quot;], #personas, button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button {
+  width: 100%;
+        padding: auto;
+        margin: math.div($base-margin, 2) auto;
+}</code>" data-collapsed="input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button { ... }"><code>input[type=&quot;date&quot;],
+      input[type=&quot;text&quot;],
+      #personas,
+      button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada y botón en pantallas pequeñas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-details"><h3 class="item__heading"><a class="item__name" href="#css-details">details</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>details {
+  display: block;
+        width: 100%;
+        z-index: 10;
+        background-color: $bg-color;
+
+        /// Estilos para los campos de entrada y botón dentro de los detalles en pantallas pequeñas
+        /// @group componentes
+        label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button {
+          display: block;
+        }
+}</code>" data-collapsed="details { ... }"><code>details { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los detalles en pantallas pequeñas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button"><h3 class="item__heading"><a class="item__name" href="#css-label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button">label, input[type=&quot;date&quot;], input[type=&quot;text&quot;], select, button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button {
+  display: block;
+}</code>" data-collapsed="label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button { ... }"><code>label,
+        input[type=&quot;date&quot;],
+        input[type=&quot;text&quot;],
+        select,
+        button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada y botón dentro de los detalles en pantallas pequeñas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-label,
+      input[type=&quot;date&quot;],
+      select,
+      button"><h3 class="item__heading"><a class="item__name" href="#css-label,
+      input[type=&quot;date&quot;],
+      select,
+      button">label, input[type=&quot;date&quot;], select, button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>label,
+      input[type=&quot;date&quot;],
+      select,
+      button {
+  display: none;
+}</code>" data-collapsed="label,
+      input[type=&quot;date&quot;],
+      select,
+      button { ... }"><code>label,
+      input[type=&quot;date&quot;],
+      select,
+      button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada y botón en pantallas pequeñas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  width: 100%;
+    height: 200px;
+    object-fit: cover;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las imágenes dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-h3"><h3 class="item__heading"><a class="item__name" href="#css-h3">h3</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h3 {
+  margin: 10px 20px;
+    font-size: $font-size * 1.1;
+    font-weight: bold;
+    color: $color-text;
+}</code>" data-collapsed="h3 { ... }"><code>h3 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los encabezados h3 dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p,
+  ul"><h3 class="item__heading"><a class="item__name" href="#css-p,
+  ul">p, ul</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p,
+  ul {
+  flex-grow: 1;
+}</code>" data-collapsed="p,
+  ul { ... }"><code>p,
+  ul { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos y listas dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  margin: 10px 20px;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: $color-text;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-ul"><h3 class="item__heading"><a class="item__name" href="#css-ul">ul</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>ul {
+  padding: 0 20px;
+    margin-bottom: 10px;
+
+    /// Estilos para los elementos de lista dentro de la tarjeta
+    /// @group componentes
+    li {
+      margin-bottom: 5px;
+      font-size: $font-size * 0.9;
+      color: $color-text;
+
+      /// Estilos para el pseudo-elemento before de los elementos de lista
+      /// @group componentes
+      &amp;:before {
+        content: &quot;•&quot;;
+        margin-right: 5px;
+      }
+    }
+}</code>" data-collapsed="ul { ... }"><code>ul { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las listas dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-li"><h3 class="item__heading"><a class="item__name" href="#css-li">li</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>li {
+  margin-bottom: 5px;
+      font-size: $font-size * 0.9;
+      color: $color-text;
+
+      /// Estilos para el pseudo-elemento before de los elementos de lista
+      /// @group componentes
+      &amp;:before {
+        content: &quot;•&quot;;
+        margin-right: 5px;
+      }
+}</code>" data-collapsed="li { ... }"><code>li { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los elementos de lista dentro de la tarjeta @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:before"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:before">&amp;:before</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:before {
+  content: &quot;•&quot;;
+        margin-right: 5px;
+}</code>" data-collapsed="&amp;:before { ... }"><code>&amp;:before { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el pseudo-elemento before de los elementos de lista @group componentes</p></div></section><section class="main__item container item" id="undefined-css-position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1"><h3 class="item__heading"><a class="item__name" href="#css-position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1">position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); color: $bg-color; background: rgba(0, 0, 0, 0.5); padding: $base-padding; text-align: center; border-radius: 5px; /// Estilos para los encabezados h1 dentro de texto-carrusel /// @group componentes h1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1 {
+  font-size: $font-size * 2;
+    padding: $base-padding;
+}</code>" data-collapsed="position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1 { ... }"><code>position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Posiciona y estiliza el contenedor de texto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-h1"><h3 class="item__heading"><a class="item__name" href="#css-h1">h1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h1 {
+  font-size: $font-size * 2;
+    padding: $base-padding;
+}</code>" data-collapsed="h1 { ... }"><code>h1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los encabezados h1 dentro de texto-carrusel @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-size: $font-size * 1.5;
+    padding: $base-padding;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro de texto-carrusel @group componentes</p></div></section><section class="main__item container item" id="undefined-css-h1"><h3 class="item__heading"><a class="item__name" href="#css-h1">h1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h1 {
+  font-size: $font-size * 1.1;
+      padding: auto;
+}</code>" data-collapsed="h1 { ... }"><code>h1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ajusta el tamaño de fuente y padding de los encabezados h1 en dispositivos móviles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-size: $font-size * 0.9;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ajusta el tamaño de fuente de los párrafos en dispositivos móviles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2"><h3 class="item__heading"><a class="item__name" href="#css-padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2">padding: $header-height 0 0 0; background-color: #f3f3f3; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); max-width: 99%; margin: $base-margin * 5 auto; /// Estilos para el título de la sección de contacto /// @group componentes h2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2 {
+  color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.7;
+    margin-bottom: 1em;
+}</code>" data-collapsed="padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2 { ... }"><code>padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el contenedor de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-h2"><h3 class="item__heading"><a class="item__name" href="#css-h2">h2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h2 {
+  color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.7;
+    margin-bottom: 1em;
+}</code>" data-collapsed="h2 { ... }"><code>h2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el título de la sección de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.2;
+    margin-bottom: 2em;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el texto de la sección de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-form"><h3 class="item__heading"><a class="item__name" href="#css-form">form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>form {
+  @include flexbox(flex, column, center, center);
+
+    /// Estilos para las etiquetas del formulario de contacto
+    /// @group componentes
+    label {
+      margin-bottom: 0.5em;
+      color: $color-text;
+      font-weight: bold;
+      font-size: $font-size * 1.2;
+    }
+
+    /// Estilos para los campos de entrada y áreas de texto del formulario de contacto
+    /// @group componentes
+    input,
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 1em;
+      padding: 0.75em;
+      border: 1px solid #ced4da;
+      border-radius: 2px;
+
+      /// Estilos para el estado de enfoque de los campos de entrada y áreas de texto
+      /// @group componentes
+      &amp;:focus {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    /// Estilos adicionales para las áreas de texto del formulario de contacto
+    /// @group componentes
+    textarea {
+      resize: none;
+      min-height: 20rem;
+      scrollbar-width: auto;
+    }
+
+    /// Estilos para el botón de envío del formulario de contacto
+    /// @group componentes
+    button {
+      @include button(1.3rem, 0.5rem);
+    }
+}</code>" data-collapsed="form { ... }"><code>form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el formulario de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-label"><h3 class="item__heading"><a class="item__name" href="#css-label">label</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>label {
+  margin-bottom: 0.5em;
+      color: $color-text;
+      font-weight: bold;
+      font-size: $font-size * 1.2;
+}</code>" data-collapsed="label { ... }"><code>label { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las etiquetas del formulario de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-input,
+    textarea"><h3 class="item__heading"><a class="item__name" href="#css-input,
+    textarea">input, textarea</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input,
+    textarea {
+  width: 100%;
+      max-width: 500px;
+      margin-bottom: 1em;
+      padding: 0.75em;
+      border: 1px solid #ced4da;
+      border-radius: 2px;
+
+      /// Estilos para el estado de enfoque de los campos de entrada y áreas de texto
+      /// @group componentes
+      &amp;:focus {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+}</code>" data-collapsed="input,
+    textarea { ... }"><code>input,
+    textarea { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada y áreas de texto del formulario de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:focus"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:focus">&amp;:focus</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}</code>" data-collapsed="&amp;:focus { ... }"><code>&amp;:focus { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el estado de enfoque de los campos de entrada y áreas de texto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-textarea"><h3 class="item__heading"><a class="item__name" href="#css-textarea">textarea</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>textarea {
+  resize: none;
+      min-height: 20rem;
+      scrollbar-width: auto;
+}</code>" data-collapsed="textarea { ... }"><code>textarea { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos adicionales para las áreas de texto del formulario de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  @include button(1.3rem, 0.5rem);
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón de envío del formulario de contacto @group componentes</p></div></section><section class="main__item container item" id="undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle"><h3 class="item__heading"><a class="item__name" href="#css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de destinos /// @group componentes .subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle {
+  font-size: $font-size * 1.7;
+    text-align: center;
+    color: $color-text;
+    border-bottom: 3px solid $color-text;
+}</code>" data-collapsed="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle { ... }"><code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el contenedor de destinos @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.subtitle"><h3 class="item__heading"><a class="item__name" href="#css-.subtitle">.subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.subtitle {
+  font-size: $font-size * 1.7;
+    text-align: center;
+    color: $color-text;
+    border-bottom: 3px solid $color-text;
+}</code>" data-collapsed=".subtitle { ... }"><code>.subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el subtítulo dentro de la sección de destinos @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.container-cards"><h3 class="item__heading"><a class="item__name" href="#css-.container-cards">.container-cards</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container-cards {
+  @include grid-card(300px, 20px);
+
+    /// Estilos para el pie de página de las tarjetas dentro del contenedor de tarjetas
+    /// @group componentes
+    .footer-card {
+      @include flexbox(flex, row, center, space-around);
+      font-weight: bold;
+
+      /// Estilos para el botón dentro del pie de página de las tarjetas
+      /// @group componentes
+      button {
+        @include button($font-size, 0.5rem);
+        margin-right: $base-margin;
+      }
+    }
+}</code>" data-collapsed=".container-cards { ... }"><code>.container-cards { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de tarjetas dentro de la sección de destinos @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.footer-card"><h3 class="item__heading"><a class="item__name" href="#css-.footer-card">.footer-card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer-card {
+  @include flexbox(flex, row, center, space-around);
+      font-weight: bold;
+
+      /// Estilos para el botón dentro del pie de página de las tarjetas
+      /// @group componentes
+      button {
+        @include button($font-size, 0.5rem);
+        margin-right: $base-margin;
+      }
+}</code>" data-collapsed=".footer-card { ... }"><code>.footer-card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el pie de página de las tarjetas dentro del contenedor de tarjetas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  @include button($font-size, 0.5rem);
+        margin-right: $base-margin;
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro del pie de página de las tarjetas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-#menu,
+  #rrss"><h3 class="item__heading"><a class="item__name" href="#css-#menu,
+  #rrss">#menu, #rrss</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#menu,
+  #rrss {
+  display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    width: 100%;
+
+    /// Estilos para los enlaces dentro de #menu y #rrss
+    /// @group componentes
+    a {
+      margin: 0 $base-margin;
+      transition: color 0.2s ease-in-out;
+
+      /// Estilos para el estado de hover de los enlaces
+      /// @group componentes
+      &amp;:hover {
+        color: #6c757d;
+      }
+    }
+}</code>" data-collapsed="#menu,
+  #rrss { ... }"><code>#menu,
+  #rrss { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para #menu y #rrss dentro del pie de página @group componentes</p></div></section><section class="main__item container item" id="undefined-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  margin: 0 $base-margin;
+      transition: color 0.2s ease-in-out;
+
+      /// Estilos para el estado de hover de los enlaces
+      /// @group componentes
+      &amp;:hover {
+        color: #6c757d;
+      }
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces dentro de #menu y #rrss @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  color: #6c757d;
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el estado de hover de los enlaces @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  margin-bottom: 1em;
+    width: 100%;
+    padding-top: 1em;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro del pie de página @group componentes</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  height: 2rem;
+    width: 2rem;
+
+    /// Estilos para el estado de hover de las imágenes
+    /// @group componentes
+    &amp;:hover {
+      transform: scale(1.2);
+    }
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las imágenes dentro del pie de página @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: scale(1.2);
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el estado de hover de las imágenes @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__logo"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__logo">&amp;__logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__logo {
+  margin: $base-margin 0;
+    font-size: $font-size * 2;
+}</code>" data-collapsed="&amp;__logo { ... }"><code>&amp;__logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el logo dentro del encabezado @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__link"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__link">&amp;__link</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__link {
+  /// Estilos para el estado de hover de los enlaces
+    /// @group componentes
+    &amp;:hover {
+      border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 2px;
+    }
+}</code>" data-collapsed="&amp;__link { ... }"><code>&amp;__link { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces dentro del encabezado @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 2px;
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el estado de hover de los enlaces @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__link-margin"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__link-margin">&amp;__link-margin</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__link-margin {
+  margin: $base-margin $base-margin * 2;
+}</code>" data-collapsed="&amp;__link-margin { ... }"><code>&amp;__link-margin { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces con margen dentro del encabezado @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;--translucent"><h3 class="item__heading"><a class="item__name" href="#css-&amp;--translucent">&amp;--translucent</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;--translucent {
+  background-color: rgba(255, 255, 255, 0.85);
+}</code>" data-collapsed="&amp;--translucent { ... }"><code>&amp;--translucent { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el encabezado translúcido @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__logo"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__logo">&amp;__logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__logo {
+  margin: math.div($base-margin, 2) auto;
+      font-size: $font-size * 1.4;
+}</code>" data-collapsed="&amp;__logo { ... }"><code>&amp;__logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ajusta los estilos del logo para dispositivos móviles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__link"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__link">&amp;__link</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__link {
+  font-size: $font-size * 1;
+      padding-bottom: 0;
+}</code>" data-collapsed="&amp;__link { ... }"><code>&amp;__link { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ajusta los estilos de los enlaces para dispositivos móviles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;__link-margin"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__link-margin">&amp;__link-margin</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__link-margin {
+  margin: auto $base-margin;
+}</code>" data-collapsed="&amp;__link-margin { ... }"><code>&amp;__link-margin { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ajusta los estilos de los enlaces con margen para dispositivos móviles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle"><h3 class="item__heading"><a class="item__name" href="#css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de novedades /// @group componentes .subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle {
+  @include subtitle();
+}</code>" data-collapsed="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle { ... }"><code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el contenedor de novedades @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.subtitle"><h3 class="item__heading"><a class="item__name" href="#css-.subtitle">.subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.subtitle {
+  @include subtitle();
+}</code>" data-collapsed=".subtitle { ... }"><code>.subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el subtítulo dentro de la sección de novedades @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.container-cards"><h3 class="item__heading"><a class="item__name" href="#css-.container-cards">.container-cards</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container-cards {
+  @include grid-card(400px, 20px);
+
+    /// Estilos para las tarjetas de novedades dentro del contenedor de tarjetas
+    /// @group componentes
+    .novedades {
+      @include card-base();
+      @include card-base-body(17rem, cover, $font-size);
+    }
+}</code>" data-collapsed=".container-cards { ... }"><code>.container-cards { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de tarjetas dentro de la sección de novedades @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.novedades"><h3 class="item__heading"><a class="item__name" href="#css-.novedades">.novedades</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.novedades {
+  @include card-base();
+      @include card-base-body(17rem, cover, $font-size);
+}</code>" data-collapsed=".novedades { ... }"><code>.novedades { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las tarjetas de novedades dentro del contenedor de tarjetas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile)"><h3 class="item__heading"><a class="item__name" href="#css-height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile)">height: 92vh; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; /// Ajusta los estilos del efecto parallax para dispositivos móviles /// @group componentes @media (max-width: $mobile)</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+  height: 40vh;
+    background-size: cover;
+}</code>" data-collapsed="height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) { ... }"><code>height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el efecto parallax @group componentes</p></div></section><section class="main__item container item" id="undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle"><h3 class="item__heading"><a class="item__name" href="#css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de servicios /// @group componentes .subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle {
+  @include subtitle();
+}</code>" data-collapsed="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle { ... }"><code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el contenedor de servicios @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.subtitle"><h3 class="item__heading"><a class="item__name" href="#css-.subtitle">.subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.subtitle {
+  @include subtitle();
+}</code>" data-collapsed=".subtitle { ... }"><code>.subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el subtítulo dentro de la sección de servicios @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.container-cards"><h3 class="item__heading"><a class="item__name" href="#css-.container-cards">.container-cards</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container-cards {
+  @include grid-card(200px, 20px);
+    @include slider();
+
+    /// Estilos para las tarjetas de servicios dentro del contenedor de tarjetas
+    /// @group componentes
+    .card-service {
+      @include card-base();
+      @include card-base-body(200px, contain, $font-size);
+    }
+}</code>" data-collapsed=".container-cards { ... }"><code>.container-cards { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de tarjetas dentro de la sección de servicios @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.card-service"><h3 class="item__heading"><a class="item__name" href="#css-.card-service">.card-service</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card-service {
+  @include card-base();
+      @include card-base-body(200px, contain, $font-size);
+}</code>" data-collapsed=".card-service { ... }"><code>.card-service { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las tarjetas de servicios dentro del contenedor de tarjetas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle"><h3 class="item__heading"><a class="item__name" href="#css-padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle">padding-top: $header-height; /// Estilos para el subtítulo dentro de la sección de valoraciones /// @group componentes .subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle {
+  @include subtitle();
+}</code>" data-collapsed="padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle { ... }"><code>padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos base para el contenedor de valoraciones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.subtitle"><h3 class="item__heading"><a class="item__name" href="#css-.subtitle">.subtitle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.subtitle {
+  @include subtitle();
+}</code>" data-collapsed=".subtitle { ... }"><code>.subtitle { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el subtítulo dentro de la sección de valoraciones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-size: $font-size * 1.2;
+    line-height: 1.5;
+    color: $color-text;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro de la sección de valoraciones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.container-cards"><h3 class="item__heading"><a class="item__name" href="#css-.container-cards">.container-cards</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container-cards {
+  @include grid-card(220px, 76px);
+
+    /// Estilos para las tarjetas de opiniones dentro del contenedor de tarjetas
+    /// @group componentes
+    .opinion {
+      @include card-base-body(17rem, cover, $font-size);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+      /// Estilos para el texto en negrita dentro de las tarjetas de opiniones
+      /// @group componentes
+      .text-bold {
+        font-weight: bold;
+      }
+
+      /// Estilos para las estrellas dentro de las tarjetas de opiniones
+      /// @group componentes
+      .stars {
+        font-size: $font-size * 1.2;
+        color: #f1c40f;
+      }
+    }
+}</code>" data-collapsed=".container-cards { ... }"><code>.container-cards { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de tarjetas dentro de la sección de valoraciones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.opinion"><h3 class="item__heading"><a class="item__name" href="#css-.opinion">.opinion</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.opinion {
+  @include card-base-body(17rem, cover, $font-size);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+      /// Estilos para el texto en negrita dentro de las tarjetas de opiniones
+      /// @group componentes
+      .text-bold {
+        font-weight: bold;
+      }
+
+      /// Estilos para las estrellas dentro de las tarjetas de opiniones
+      /// @group componentes
+      .stars {
+        font-size: $font-size * 1.2;
+        color: #f1c40f;
+      }
+}</code>" data-collapsed=".opinion { ... }"><code>.opinion { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las tarjetas de opiniones dentro del contenedor de tarjetas @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.text-bold"><h3 class="item__heading"><a class="item__name" href="#css-.text-bold">.text-bold</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.text-bold {
+  font-weight: bold;
+}</code>" data-collapsed=".text-bold { ... }"><code>.text-bold { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el texto en negrita dentro de las tarjetas de opiniones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-.stars"><h3 class="item__heading"><a class="item__name" href="#css-.stars">.stars</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.stars {
+  font-size: $font-size * 1.2;
+        color: #f1c40f;
+}</code>" data-collapsed=".stars { ... }"><code>.stars { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las estrellas dentro de las tarjetas de opiniones @group componentes</p></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las imágenes dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-h3"><h3 class="item__heading"><a class="item__name" href="#css-h3">h3</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h3 {
+  font-size: $font-size * 1.8;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        text-align: center;
+}</code>" data-collapsed="h3 { ... }"><code>h3 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los encabezados h3 dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-size: $font-size * 1;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 1em;
+
+        /// Estilos para los párrafos de calificación dentro del contenedor de detalles
+        /// @group componentes
+        &amp;.rating {
+            font-size: $font-size * 1.4;
+            font-weight: bold;
+
+            /// Estilos para el pseudo-elemento after de los párrafos de calificación
+            /// @group componentes
+            &amp;::after {
+                content: &quot;★★★★☆&quot;;
+                color: #f1c40f;
+            }
+            /// Estilos para los párrafos de precio dentro del contenedor de detalles
+            /// @group componentes
+            &amp;.price {
+                font-size: $font-size * 1.5;
+                font-weight: bold;
+                position: relative;
+            }
+        }
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;.rating"><h3 class="item__heading"><a class="item__name" href="#css-&amp;.rating">&amp;.rating</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.rating {
+  font-size: $font-size * 1.4;
+            font-weight: bold;
+
+            /// Estilos para el pseudo-elemento after de los párrafos de calificación
+            /// @group componentes
+            &amp;::after {
+                content: &quot;★★★★☆&quot;;
+                color: #f1c40f;
+            }
+            /// Estilos para los párrafos de precio dentro del contenedor de detalles
+            /// @group componentes
+            &amp;.price {
+                font-size: $font-size * 1.5;
+                font-weight: bold;
+                position: relative;
+            }
+}</code>" data-collapsed="&amp;.rating { ... }"><code>&amp;.rating { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos de calificación dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;::after"><h3 class="item__heading"><a class="item__name" href="#css-&amp;::after">&amp;::after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::after {
+  content: &quot;★★★★☆&quot;;
+                color: #f1c40f;
+}</code>" data-collapsed="&amp;::after { ... }"><code>&amp;::after { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el pseudo-elemento after de los párrafos de calificación @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;.price"><h3 class="item__heading"><a class="item__name" href="#css-&amp;.price">&amp;.price</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;.price {
+  font-size: $font-size * 1.5;
+                font-weight: bold;
+                position: relative;
+}</code>" data-collapsed="&amp;.price { ... }"><code>&amp;.price { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos de precio dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-ul"><h3 class="item__heading"><a class="item__name" href="#css-ul">ul</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>ul {
+  margin-bottom: 1em;
+
+        /// Estilos para los elementos de lista dentro del contenedor de detalles
+        /// @group componentes
+        li {
+            margin: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+            /// Estilos para los elementos de lista al pasar el ratón
+            /// @group componentes
+            &amp;:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+}</code>" data-collapsed="ul { ... }"><code>ul { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las listas dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-li"><h3 class="item__heading"><a class="item__name" href="#css-li">li</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>li {
+  margin: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+            /// Estilos para los elementos de lista al pasar el ratón
+            /// @group componentes
+            &amp;:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+}</code>" data-collapsed="li { ... }"><code>li { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los elementos de lista dentro del contenedor de detalles @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:hover">&amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:hover {
+  transform: scale(1.05);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}</code>" data-collapsed="&amp;:hover { ... }"><code>&amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los elementos de lista al pasar el ratón @group componentes</p></div></section><section class="main__item container item" id="undefined-css-&amp;:visited"><h3 class="item__heading"><a class="item__name" href="#css-&amp;:visited">&amp;:visited</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;:visited {
+  color: inherit;
+}</code>" data-collapsed="&amp;:visited { ... }"><code>&amp;:visited { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces visitados @group configuración</p></div></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-base-margin"><h3 class="item__heading"><a class="item__name" href="#variable-base-margin">base-margin</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-margin: 1rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Margen base para el diseño</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base-body"><code>card-base-body</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base-body"><code>card-base-body</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-slider"><code>slider</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-base-padding"><h3 class="item__heading"><a class="item__name" href="#variable-base-padding">base-padding</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-padding: 1rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Relleno base para el diseño</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base-body"><code>card-base-body</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-font-family">font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family: &quot;Roboto&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Fuente principal para el cuerpo del sitio</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p></section><section class="main__item container item" id="undefined-variable-font-family-headings"><h3 class="item__heading"><a class="item__name" href="#variable-font-family-headings">font-family-headings</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family-headings: &quot;Montserrat&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Fuente para los encabezados</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p></section><section class="main__item container item" id="undefined-variable-font-size"><h3 class="item__heading"><a class="item__name" href="#variable-font-size">font-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-size: 1rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de fuente principal</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-button"><code>button</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-subtitle"><code>subtitle</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-bg-color"><h3 class="item__heading"><a class="item__name" href="#variable-bg-color">bg-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$bg-color: #fff;</code></pre><span class="color-preview--block" style="background: #fff;"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de fondo para el cuerpo del sitio</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-button"><code>button</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-max-width"><h3 class="item__heading"><a class="item__name" href="#variable-max-width">max-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$max-width: 1400px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Ancho máximo del diseño</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p></section><section class="main__item container item" id="undefined-variable-header-height"><h3 class="item__heading"><a class="item__name" href="#variable-header-height">header-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-height: 8vh;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Altura del encabezado</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p></section><section class="main__item container item" id="undefined-variable-header-text-color"><h3 class="item__heading"><a class="item__name" href="#variable-header-text-color">header-text-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-text-color: #444444;</code></pre><span class="color-preview--block" style="background: #444444;"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color del texto del encabezado</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-header-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-header-font-family">header-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-font-family: sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Fuente para el encabezado</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p></section><section class="main__item container item" id="undefined-variable-header-font-size"><h3 class="item__heading"><a class="item__name" href="#variable-header-font-size">header-font-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-font-size: 1.2rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de fuente para el encabezado</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p></section><section class="main__item container item" id="undefined-variable-header-link-hover-color"><h3 class="item__heading"><a class="item__name" href="#variable-header-link-hover-color">header-link-hover-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-link-hover-color: #ddd;</code></pre><span class="color-preview--block" style="background: #ddd;"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de los enlaces del encabezado al pasar el ratón</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-color-background"><h3 class="item__heading"><a class="item__name" href="#variable-color-background">color-background</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-background: white;</code></pre><span class="color-preview--block" style="background: white;"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de fondo para las tarjetas</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base"><code>card-base</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-color-text"><h3 class="item__heading"><a class="item__name" href="#variable-color-text">color-text</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-text: #333;</code></pre><span class="color-preview--block" style="background: #333;"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color del texto para las tarjetas</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-subtitle"><code>subtitle</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-subtitle"><code>subtitle</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base-body"><code>card-base-body</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base-body"><code>card-base-body</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-color-shadow-light"><h3 class="item__heading"><a class="item__name" href="#variable-color-shadow-light">color-shadow-light</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-shadow-light: rgba(0, 0, 0, 0.1);</code></pre><span class="color-preview--block" style="background: rgba(0, 0, 0, 0.1);"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de la sombra ligera para las tarjetas</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base"><code>card-base</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-color-shadow-dark"><h3 class="item__heading"><a class="item__name" href="#variable-color-shadow-dark">color-shadow-dark</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-shadow-dark: rgba(0, 0, 0, 0.2);</code></pre><span class="color-preview--block" style="background: rgba(0, 0, 0, 0.2);"></span></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de la sombra oscura para las tarjetas</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixins-mixin-card-base"><code>card-base</code></a></li></ul></section><section class="main__item container item" id="undefined-variable-mobile"><h3 class="item__heading"><a class="item__name" href="#variable-mobile">mobile</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$mobile: 428px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Punto de interrupción para móviles en el diseño responsive</p></div><h3 class="item__sub-heading">Type</h3><p><code>Length</code></p></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Alquiler-casas-sass</span><!-- Version --> <span class="project-info__version">- v0.0.1</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
