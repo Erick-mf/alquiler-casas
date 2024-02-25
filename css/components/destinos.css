@@ -1,0 +1,41 @@
+#destinos {
+  padding-top: 8vh;
+}
+#destinos .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#destinos .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+#destinos .container-cards .footer-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+#destinos .container-cards .footer-card button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+@media (max-width: 428px) {
+  #destinos .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=destinos.css.map */

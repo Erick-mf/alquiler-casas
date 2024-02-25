@@ -1,27 +1,46 @@
+/// Importa las variables del proyecto
+/// @group configuración
 @import "variables";
-@import "helpers";
 
+/// Importa los mixins del proyecto
+/// @group configuración
+@import "mixins";
+
+/// Estilos para el encabezado
+/// @group componentes
 header {
-  width: 100%;
-  max-width: $max-width;
-  padding: $base-padding 0;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  height: $header-height;
-  font-family: $header-font-family;
-  font-size: $header-font-size;
-  color: $header-text-color;
+    width: 100%;
+    max-width: $max-width;
+    padding: $base-padding 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: $header-height;
+    font-family: $header-font-family;
+    font-size: $header-font-size;
+    color: $header-text-color;
+
+    /// Estilos para el encabezado en pantallas pequeñas
+    /// @group componentes
+    @media (max-width: $mobile) {
+        height: auto;
+        padding: auto;
+        margin: auto;
+    }
 }
 
+/// Estilos para el contenido principal
+/// @group componentes
 main {
-  width: 100%;
-  max-width: $max-width;
-  margin-top: $header-height;
+    width: 100%;
+    max-width: $max-width;
+    margin-top: $header-height;
 }
 
+/// Estilos para el pie de página
+/// @group componentes
 footer {
-  width: 100%;
-  max-width: $max-width;
-  bottom: 0;
+    width: 100%;
+    max-width: $max-width;
+    bottom: 0;
 }

@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../mixins";
+
+/// Contenedor principal para la sección de destinos
+/// @group componentes
+#destinos {
+  /// Estilos base para el contenedor de destinos
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de destinos
+  /// @group componentes
+  .subtitle {
+    font-size: $font-size * 1.7;
+    text-align: center;
+    color: $color-text;
+    border-bottom: 3px solid $color-text;
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de destinos
+  /// @group componentes
+  .container-cards {
+    @include grid-card(300px, 20px);
+
+    /// Estilos para el pie de página de las tarjetas dentro del contenedor de tarjetas
+    /// @group componentes
+    .footer-card {
+      @include flexbox(flex, row, center, space-around);
+      font-weight: bold;
+
+      /// Estilos para el botón dentro del pie de página de las tarjetas
+      /// @group componentes
+      button {
+        @include button($font-size, 0.5rem);
+        margin-right: $base-margin;
+      }
+    }
+  }
+
+  /// Ajusta los estilos de la sección de destinos para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}

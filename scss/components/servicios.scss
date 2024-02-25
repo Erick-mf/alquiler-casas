@@ -1,0 +1,38 @@
+@import "../mixins";
+@import "../variables";
+
+/// Contenedor principal para la sección de servicios
+/// @group componentes
+#servicios {
+  /// Estilos base para el contenedor de servicios
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de servicios
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de servicios
+  /// @group componentes
+  .container-cards {
+    @include grid-card(200px, 20px);
+    @include slider();
+
+    /// Estilos para las tarjetas de servicios dentro del contenedor de tarjetas
+    /// @group componentes
+    .card-service {
+      @include card-base();
+      @include card-base-body(200px, contain, $font-size);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de servicios para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}

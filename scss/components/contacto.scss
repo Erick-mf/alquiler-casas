@@ -1,0 +1,98 @@
+@import "../variables";
+@import "../mixins";
+
+/// Contenedor principal para la sección de contacto
+/// @group componentes
+#contactanos {
+  /// Estilos base para el contenedor de contacto
+  /// @group componentes
+  padding: $header-height 0 0 0;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 99%;
+  margin: $base-margin * 5 auto;
+
+  /// Estilos para el título de la sección de contacto
+  /// @group componentes
+  h2 {
+    color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.7;
+    margin-bottom: 1em;
+  }
+
+  /// Estilos para el texto de la sección de contacto
+  /// @group componentes
+  p {
+    color: #6c757d;
+    text-align: center;
+    font-size: $font-size * 1.2;
+    margin-bottom: 2em;
+  }
+
+  /// Estilos para el formulario de contacto
+  /// @group componentes
+  form {
+    @include flexbox(flex, column, center, center);
+
+    /// Estilos para las etiquetas del formulario de contacto
+    /// @group componentes
+    label {
+      margin-bottom: 0.5em;
+      color: $color-text;
+      font-weight: bold;
+      font-size: $font-size * 1.2;
+    }
+
+    /// Estilos para los campos de entrada y áreas de texto del formulario de contacto
+    /// @group componentes
+    input,
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 1em;
+      padding: 0.75em;
+      border: 1px solid #ced4da;
+      border-radius: 2px;
+
+      /// Estilos para el estado de enfoque de los campos de entrada y áreas de texto
+      /// @group componentes
+      &:focus {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    /// Estilos adicionales para las áreas de texto del formulario de contacto
+    /// @group componentes
+    textarea {
+      resize: none;
+      min-height: 20rem;
+      scrollbar-width: auto;
+    }
+
+    /// Estilos para el botón de envío del formulario de contacto
+    /// @group componentes
+    button {
+      @include button(1.3rem, 0.5rem);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de contacto para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    h2 {
+      font-size: $font-size * 1.2;
+    }
+
+    form {
+      textarea {
+        min-height: 8rem;
+      }
+
+      button {
+        @include button(1rem, 0.5rem);
+      }
+    }
+  }
+}

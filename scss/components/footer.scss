@@ -1,0 +1,65 @@
+@import "../variables";
+@import "../mixins";
+
+/// Estilos para .footer
+/// @group componentes
+.footer {
+  /// Estilos base para el pie de página
+  /// @group componentes
+  @include flexbox(flex, row, center, center);
+  color: $color-text;
+  padding: $base-padding;
+  text-align: center;
+  font-size: $font-size * 0.9;
+
+  /// Estilos para #menu y #rrss dentro del pie de página
+  /// @group componentes
+  #menu,
+  #rrss {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    width: 100%;
+
+    /// Estilos para los enlaces dentro de #menu y #rrss
+    /// @group componentes
+    a {
+      margin: 0 $base-margin;
+      transition: color 0.2s ease-in-out;
+
+      /// Estilos para el estado de hover de los enlaces
+      /// @group componentes
+      &:hover {
+        color: #6c757d;
+      }
+    }
+  }
+
+  /// Estilos para los párrafos dentro del pie de página
+  /// @group componentes
+  p {
+    margin-bottom: 1em;
+    width: 100%;
+    padding-top: 1em;
+  }
+
+  /// Estilos para las imágenes dentro del pie de página
+  /// @group componentes
+  img {
+    height: 2rem;
+    width: 2rem;
+
+    /// Estilos para el estado de hover de las imágenes
+    /// @group componentes
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  /// Ajusta los estilos del pie de página para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}

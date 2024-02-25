@@ -1,0 +1,69 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+/// Estilos para carrusel
+/// @group componentes
+#carrusel {
+  /// Aplica los estilos del carrusel
+  /// @group componentes
+  @include carrusel(75vh);
+
+  /// Ajusta la altura del carrusel en dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    @include carrusel(30vh);
+  }
+}
+
+/// Estilos para texto-carrusel
+/// @group componentes
+#texto-carrusel {
+  /// Posiciona y estiliza el contenedor de texto
+  /// @group componentes
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $bg-color;
+  background: rgba(0, 0, 0, 0.5);
+  padding: $base-padding;
+  text-align: center;
+  border-radius: 5px;
+
+  /// Estilos para los encabezados h1 dentro de texto-carrusel
+  /// @group componentes
+  h1 {
+    font-size: $font-size * 2;
+    padding: $base-padding;
+  }
+
+  /// Estilos para los párrafos dentro de texto-carrusel
+  /// @group componentes
+  p {
+    font-size: $font-size * 1.5;
+    padding: $base-padding;
+  }
+
+  /// Ajusta la posición, tamaño y estilos de texto en dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0;
+
+    /// Ajusta el tamaño de fuente y padding de los encabezados h1 en dispositivos móviles
+    /// @group componentes
+    h1 {
+      font-size: $font-size * 1.1;
+      padding: auto;
+    }
+
+    /// Ajusta el tamaño de fuente de los párrafos en dispositivos móviles
+    /// @group componentes
+    p {
+      font-size: $font-size * 0.9;
+    }
+  }
+}

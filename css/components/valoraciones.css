@@ -1,0 +1,63 @@
+#valoraciones {
+  padding-top: 8vh;
+}
+#valoraciones .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#valoraciones p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+#valoraciones .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 76px;
+  justify-items: center;
+}
+#valoraciones .container-cards .opinion {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#valoraciones .container-cards .opinion img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+#valoraciones .container-cards .opinion h3,
+#valoraciones .container-cards .opinion p {
+  justify-self: center;
+}
+#valoraciones .container-cards .opinion h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+#valoraciones .container-cards .opinion p {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+#valoraciones .container-cards .opinion .text-bold {
+  font-weight: bold;
+}
+#valoraciones .container-cards .opinion .stars {
+  font-size: 1.2rem;
+  color: #f1c40f;
+}
+@media (max-width: 428px) {
+  #valoraciones .subtitle {
+    font-size: 1.2rem;
+  }
+  #valoraciones p {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=valoraciones.css.map */

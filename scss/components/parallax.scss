@@ -1,0 +1,20 @@
+@import "../variables";
+
+/// Estilos para .parallax
+/// @group componentes
+.parallax {
+  /// Estilos base para el efecto parallax
+  /// @group componentes
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /// Ajusta los estilos del efecto parallax para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    height: 40vh;
+    background-size: cover;
+  }
+}

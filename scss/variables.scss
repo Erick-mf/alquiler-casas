@@ -1,26 +1,67 @@
+/// Margen base para el diseño
+/// @type Length
 $base-margin: 1rem;
+
+/// Relleno base para el diseño
+/// @type Length
 $base-padding: 1rem;
 
+/// Fuente principal para el cuerpo del sitio
+/// @type String
 $font-family: "Roboto", sans-serif;
+
+/// Fuente para los encabezados
+/// @type String
 $font-family-headings: "Montserrat", sans-serif;
+
+/// Tamaño de fuente principal
+/// @type Length
 $font-size: 1rem;
 
+/// Color de fondo para el cuerpo del sitio
+/// @type Color
 $bg-color: #fff;
 
+/// Ancho máximo del diseño
+/// @type Length
 $max-width: 1400px;
 
-$breakpoint-tablet: 768px;
-$breakpoint-mobile: 480px;
-
-// Variables para el header
+/// Altura del encabezado
+/// @type Length
 $header-height: 8vh;
+
+/// Color del texto del encabezado
+/// @type Color
 $header-text-color: #444444;
+
+/// Fuente para el encabezado
+/// @type String
 $header-font-family: sans-serif;
+
+/// Tamaño de fuente para el encabezado
+/// @type Length
 $header-font-size: 1.2rem;
+
+/// Color de los enlaces del encabezado al pasar el ratón
+/// @type Color
 $header-link-hover-color: #ddd;
 
-// varaibles para el cars
+/// Color de fondo para las tarjetas
+/// @type Color
 $color-background: white;
+
+/// Color del texto para las tarjetas
+/// @type Color
 $color-text: #333;
+
+/// Color de la sombra ligera para las tarjetas
+/// @type Color
 $color-shadow-light: rgba(0, 0, 0, 0.1);
+
+/// Color de la sombra oscura para las tarjetas
+/// @type Color
 $color-shadow-dark: rgba(0, 0, 0, 0.2);
+
+/// Punto de interrupción para móviles en el diseño responsive
+/// @type Length
+$mobile: 428px;

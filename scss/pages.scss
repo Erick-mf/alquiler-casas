@@ -1,0 +1,112 @@
+/// Estilos para el contenedor de detalles
+/// @group componentes
+#details-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 $base-padding;
+
+    /// Estilos para las imágenes dentro del contenedor de detalles
+    /// @group componentes
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /// Estilos para los encabezados h3 dentro del contenedor de detalles
+    /// @group componentes
+    h3 {
+        font-size: $font-size * 1.8;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    /// Estilos para los párrafos dentro del contenedor de detalles
+    /// @group componentes
+    p {
+        font-size: $font-size * 1;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 1em;
+
+        /// Estilos para los párrafos de calificación dentro del contenedor de detalles
+        /// @group componentes
+        &.rating {
+            font-size: $font-size * 1.4;
+            font-weight: bold;
+
+            /// Estilos para el pseudo-elemento after de los párrafos de calificación
+            /// @group componentes
+            &::after {
+                content: "★★★★☆";
+                color: #f1c40f;
+            }
+            /// Estilos para los párrafos de precio dentro del contenedor de detalles
+            /// @group componentes
+            &.price {
+                font-size: $font-size * 1.5;
+                font-weight: bold;
+                position: relative;
+            }
+        }
+    }
+
+    /// Estilos para las listas dentro del contenedor de detalles
+    /// @group componentes
+    ul {
+        margin-bottom: 1em;
+
+        /// Estilos para los elementos de lista dentro del contenedor de detalles
+        /// @group componentes
+        li {
+            margin: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+            /// Estilos para los elementos de lista al pasar el ratón
+            /// @group componentes
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    /// Estilos para el contenedor de detalles en pantallas pequeñas
+    /// @group componentes
+    @media (max-width: 768px) {
+        #details-container {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 80%;
+        }
+
+        h3 {
+            font-size: $font-size * 1.3;
+        }
+
+        p {
+            font-size: $font-size * 1;
+
+            &.price {
+                font-size: $font-size * 1.2;
+            }
+
+            &.rating {
+                font-size: $font-size * 1.1;
+            }
+        }
+
+        ul li {
+            font-size: $font-size;
+        }
+    }
+}

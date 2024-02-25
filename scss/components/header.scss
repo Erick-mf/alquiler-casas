@@ -1,0 +1,72 @@
+@use "sass:math";
+
+@import "../mixins.scss";
+@import "../variables.scss";
+
+
+/// Estilos para .header
+/// @group componentes
+.header {
+  /// Estilos base para el encabezado
+  /// @group componentes
+  @include flexbox(flex, row, center, space-between);
+  background-color: rgb(255, 255, 255, 1);
+  transition: background-color 0.2s ease-in-out;
+
+  /// Estilos para el logo dentro del encabezado
+  /// @group componentes
+  &__logo {
+    margin: $base-margin 0;
+    font-size: $font-size * 2;
+  }
+
+  /// Estilos para los enlaces dentro del encabezado
+  /// @group componentes
+  &__link {
+
+    /// Estilos para el estado de hover de los enlaces
+    /// @group componentes
+    &:hover {
+      border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+      padding-bottom: 2px;
+    }
+  }
+
+  /// Estilos para los enlaces con margen dentro del encabezado
+  /// @group componentes
+  &__link-margin {
+    margin: $base-margin $base-margin * 2;
+  }
+
+  /// Estilos para el encabezado translúcido
+  /// @group componentes
+  &--translucent {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  /// Ajusta los estilos del encabezado para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    flex-direction: column;
+
+    /// Ajusta los estilos del logo para dispositivos móviles
+    /// @group componentes
+    &__logo {
+      margin: math.div($base-margin, 2) auto;
+      font-size: $font-size * 1.4;
+    }
+
+    /// Ajusta los estilos de los enlaces para dispositivos móviles
+    /// @group componentes
+    &__link {
+      font-size: $font-size * 1;
+      padding-bottom: 0;
+    }
+
+    /// Ajusta los estilos de los enlaces con margen para dispositivos móviles
+    /// @group componentes
+    &__link-margin {
+      margin: auto $base-margin;
+    }
+  }
+}

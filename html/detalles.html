@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>ViilaZen | Galeria</title>
+        <script>
+            $(document).ready(function () {
+                var urlParams = new URLSearchParams(window.location.search);
+                var cardId = urlParams.get("id");
+
+                $.getJSON("../js/details.json", function (data) {
+                    var cardDetails = data.details.find((detail) => detail.id === cardId);
+
+                    if (cardDetails) {
+                        $("#details-container").html(`
+        <img src="${cardDetails.imagen.src}" alt="${cardDetails.imagen.alt}" />
+        <h3>${cardDetails.titulo}</h3>
+        <p>${cardDetails.descripcion}</p>
+        <ul>
+          ${cardDetails.extras.map((extra) => `<li>${extra}</li>`).join("")}
+        </ul>
+        <p class="rating">Valoración:</o>
+        <p class="price">Precio por noche: ${cardDetails.precio}</p>
+      `);
+                    } else {
+                        $("#details-container").html("<p>No se encontraron detalles para esta tarjeta.</p>");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <section class="header__logo"><a href="../index.html">VillaZen</a></section>
+        </header>
+        <main>
+            <a href="../index.html#destinos">← Volver</a>
+            <section id="details-container"></section>
+        </main>
+        <script src="../js/index.js" type="module"></script>
+    </body>
+</html>

@@ -10,6 +10,13 @@ header {
   font-size: 1.2rem;
   color: #444444;
 }
+@media (max-width: 428px) {
+  header {
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+}
 
 main {
   width: 100%;

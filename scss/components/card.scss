@@ -1,0 +1,65 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+/// Estilos para la tarjeta
+/// @group componentes
+.card {
+  /// Aplica los estilos base de la tarjeta
+  /// @group componentes
+  @include card-base();
+
+  /// Estilos para las imágenes dentro de la tarjeta
+  /// @group componentes
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /// Estilos para los encabezados h3 dentro de la tarjeta
+  /// @group componentes
+  h3 {
+    margin: 10px 20px;
+    font-size: $font-size * 1.1;
+    font-weight: bold;
+    color: $color-text;
+  }
+
+  /// Estilos para los párrafos y listas dentro de la tarjeta
+  /// @group componentes
+  p,
+  ul {
+    flex-grow: 1;
+  }
+
+  /// Estilos para los párrafos dentro de la tarjeta
+  /// @group componentes
+  p {
+    margin: 10px 20px;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  /// Estilos para las listas dentro de la tarjeta
+  /// @group componentes
+  ul {
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    /// Estilos para los elementos de lista dentro de la tarjeta
+    /// @group componentes
+    li {
+      margin-bottom: 5px;
+      font-size: $font-size * 0.9;
+      color: $color-text;
+
+      /// Estilos para el pseudo-elemento before de los elementos de lista
+      /// @group componentes
+      &:before {
+        content: "•";
+        margin-right: 5px;
+      }
+    }
+  }
+}

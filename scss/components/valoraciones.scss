@@ -1,0 +1,63 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+/// Contenedor principal para la sección de valoraciones
+/// @group componentes
+#valoraciones {
+  /// Estilos base para el contenedor de valoraciones
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de valoraciones
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para los párrafos dentro de la sección de valoraciones
+  /// @group componentes
+  p {
+    font-size: $font-size * 1.2;
+    line-height: 1.5;
+    color: $color-text;
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de valoraciones
+  /// @group componentes
+  .container-cards {
+    @include grid-card(220px, 76px);
+
+    /// Estilos para las tarjetas de opiniones dentro del contenedor de tarjetas
+    /// @group componentes
+    .opinion {
+      @include card-base-body(17rem, cover, $font-size);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+      /// Estilos para el texto en negrita dentro de las tarjetas de opiniones
+      /// @group componentes
+      .text-bold {
+        font-weight: bold;
+      }
+
+      /// Estilos para las estrellas dentro de las tarjetas de opiniones
+      /// @group componentes
+      .stars {
+        font-size: $font-size * 1.2;
+        color: #f1c40f;
+      }
+    }
+  }
+
+  /// Ajusta los estilos de la sección de valoraciones para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+
+    p {
+      font-size: $font-size * 1;
+    }
+  }
+}

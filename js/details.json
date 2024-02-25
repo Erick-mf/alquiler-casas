@@ -1,0 +1,70 @@
+{
+    "details": [
+        {
+            "id": "card1",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino1.webp",
+                "alt": "Destino 1"
+            },
+            "titulo": "Marbella, Andalucia, España",
+            "descripcion": "Ha sido recientemente reformado dando a la propiedad un toque contemporáneo, manteniendo muchas de las características originales de su diseño Cortijo español y ofrece vistas parciales al mar.",
+            "extras": ["5 camas", "4 baños", "Piscina", "Jardin", "Cocina abierta"],
+            "precio": "€ 200"
+        },
+        {
+            "id": "card2",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino2.webp",
+                "alt": "Destino 2"
+            },
+            "titulo": "Andratx, Islas Baleares, España",
+            "descripcion": "Ofrece la mezcla ideal de arquitectura mediterránea e instalaciones modernas, como calefacción por suelo radiante, aire acondicionado frío/calor, garaje doble y habitaciones amplias e iluminadas.",
+            "extras": ["5 camas", "4 baños", "Piscina", "Garaje doble", "Cocina moderna"],
+            "precio": "€ 450"
+        },
+        {
+            "id": "card3",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino3.webp",
+                "alt": "Destino 3"
+            },
+            "titulo": "Jávea, Comunidad Valenciana, España",
+            "descripcion": "Una urbanización consolidada situada en plena naturaleza, cerca de bosques, ríos, zonas verdes, montañas de la Sierra Calderona y a poca distancia de las hermosas playas que ofrece el Mediterráneo.",
+            "extras": ["6 camas", "5 baños", "Piscina", "Cocina moderna", "Vista a la montaña"],
+            "precio": "€ 320"
+        },
+        {
+            "id": "card4",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino4.webp",
+                "alt": "Destino 4"
+            },
+            "titulo": "Comunidad de Madrid, Madrid, España",
+            "descripcion": "Por su calidad de vida y cercanía al centro de Madrid, Majadahonda se ha convertido en una de las zonas más importantes de la Comunidad de Madrid.",
+            "extras": ["6 camas", "3 baños", "Piscina", "Cocina abierta"],
+            "precio": "€ 150"
+        },
+        {
+            "id": "card5",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino5.webp",
+                "alt": "Destino 5"
+            },
+            "titulo": "Santa Cruz de Tenerife, Islas Canarias, España",
+            "descripcion": "Esta obra maestra de la arquitectura moderna se encuentra en las colinas de La Quinta, dentro de la exclusiva comunidad cerrada de The Hills. Esta espaciosa villa ha sido construida con un diseño sin igual y una calidad de construcción inigualable.",
+            "extras": ["6 camas", "7 baños", "Piscina", "Vistas al mar", "Cocina moderna"],
+            "precio": "€ 200"
+        },
+        {
+            "id": "card6",
+            "imagen": {
+                "src": "../img/top_destinos/top-destino6.webp",
+                "alt": "Destino 6"
+            },
+            "titulo": "La Herradura, Andalucia, España",
+            "descripcion": "La propiedad está rodeada de un exuberante jardín tropical, con un camino exterior escalonado que conecta la casa con la terraza con tumbonas y una piscina climatizada de agua salada.",
+            "extras": ["4 camas", "3 baños", "Piscina", "Cocina tradicional"],
+            "precio": "€ 170"
+        }
+    ]
+}

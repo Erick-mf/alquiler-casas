@@ -1,0 +1,37 @@
+@import "../mixins";
+@import "../variables";
+
+/// Contenedor principal para la sección de novedades
+/// @group componentes
+#novedades {
+  /// Estilos base para el contenedor de novedades
+  /// @group componentes
+  padding-top: $header-height;
+
+  /// Estilos para el subtítulo dentro de la sección de novedades
+  /// @group componentes
+  .subtitle {
+    @include subtitle();
+  }
+
+  /// Estilos para el contenedor de tarjetas dentro de la sección de novedades
+  /// @group componentes
+  .container-cards {
+    @include grid-card(400px, 20px);
+
+    /// Estilos para las tarjetas de novedades dentro del contenedor de tarjetas
+    /// @group componentes
+    .novedades {
+      @include card-base();
+      @include card-base-body(17rem, cover, $font-size);
+    }
+  }
+
+  /// Ajusta los estilos de la sección de novedades para dispositivos móviles
+  /// @group componentes
+  @media (max-width: $mobile) {
+    .subtitle {
+      font-size: $font-size * 1.2;
+    }
+  }
+}

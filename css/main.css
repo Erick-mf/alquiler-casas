@@ -1,14 +1,12 @@
 @charset "UTF-8";
-:target::before {
-  content: "";
-  display: block;
-  height: 8vh;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,8 +14,8 @@ body {
   font-size: 1rem;
   background-color: #fff;
   max-width: 1400px;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 8vh auto 0 auto;
+  min-height: 100vh;
 }
 
 h1,
@@ -83,6 +81,13 @@ header {
   font-size: 1.2rem;
   color: #444444;
 }
+@media (max-width: 428px) {
+  header {
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+}
 
 main {
   width: 100%;
@@ -96,127 +101,80 @@ footer {
   bottom: 0;
 }
 
-.booking {
-  padding: 1rem;
-  border-top: 2px solid #ddd;
-  max-width: 1400px;
-  margin: auto;
+#details-container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-.booking form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
+#details-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.booking form input,
-.booking form select {
-  padding: 0.5rem 0;
-  margin: 0 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#details-container h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
-.booking form input[type=text],
-.booking form select[type=text] {
-  width: 20rem;
-  padding: 0.5rem;
+#details-container p {
   font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1em;
 }
-.booking form input::placeholder,
-.booking form select::placeholder {
-  font-style: italic;
-  font-size: 0.8rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-.booking form input:focus,
-.booking form select:focus {
-  border-color: rgba(0, 0, 0, 0.5);
-  transition: border-color 0.3s ease;
-}
-.booking form #personas {
-  width: 4rem;
-  padding: 0.5rem 0;
-  margin: 0 1rem;
-  border: 1px solid #ddd;
-  text-align: center;
-  border-radius: 0.5rem;
-}
-.booking form #personas option {
-  text-align: center;
-}
-.booking form option {
-  text-align: center;
-}
-.booking form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.booking form button:hover {
-  background-color: #444;
-}
-
-.card {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-.card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.card h3 {
-  margin: 10px 20px;
-  font-size: 1.1rem;
+#details-container p.rating {
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #333;
 }
-.card p,
-.card ul {
-  flex-grow: 1;
+#details-container p.rating::after {
+  content: "★★★★☆";
+  color: #f1c40f;
 }
-.card p {
-  margin: 10px 20px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
+#details-container p.rating.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
 }
-.card ul {
-  padding: 0 20px;
-  margin-bottom: 10px;
+#details-container ul {
+  margin-bottom: 1em;
 }
-.card ul li {
-  margin-bottom: 5px;
-  font-size: 0.9rem;
-  color: #333;
+#details-container ul li {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
-.card ul li:before {
-  content: "•";
-  margin-right: 5px;
+#details-container ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-.parallax {
-  height: 92vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 768px) {
+  #details-container #details-container {
+    max-width: 100%;
+  }
+  #details-container img {
+    max-width: 80%;
+  }
+  #details-container h3 {
+    font-size: 1.3rem;
+  }
+  #details-container p {
+    font-size: 1rem;
+  }
+  #details-container p.price {
+    font-size: 1.2rem;
+  }
+  #details-container p.rating {
+    font-size: 1.1rem;
+  }
+  #details-container ul li {
+    font-size: 1rem;
+  }
 }
 
 .header {
@@ -241,6 +199,22 @@ footer {
 .header--translucent {
   background-color: rgba(255, 255, 255, 0.85);
 }
+@media (max-width: 428px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__logo {
+    margin: 0.5rem auto;
+    font-size: 1.4rem;
+  }
+  .header__link {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  .header__link-margin {
+    margin: auto 1rem;
+  }
+}
 
 .booking {
   padding: 1rem;
@@ -281,6 +255,9 @@ footer {
 .booking form select:focus {
   border-color: rgba(0, 0, 0, 0.5);
   transition: border-color 0.3s ease;
+}
+.booking form details {
+  display: none;
 }
 .booking form #personas {
   width: 4rem;
@@ -310,6 +287,41 @@ footer {
 .booking form button:hover {
   background-color: #444;
 }
+@media (max-width: 428px) {
+  .booking {
+    margin-top: 7rem;
+  }
+  .booking form {
+    width: 100%;
+  }
+  .booking form input[type=date],
+  .booking form input[type=text],
+  .booking form #personas,
+  .booking form button {
+    width: 100%;
+    padding: auto;
+    margin: 0.5rem auto;
+  }
+  .booking form details {
+    display: block;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .booking form details label,
+  .booking form details input[type=date],
+  .booking form details input[type=text],
+  .booking form details select,
+  .booking form details button {
+    display: block;
+  }
+  .booking form label,
+  .booking form input[type=date],
+  .booking form select,
+  .booking form button {
+    display: none;
+  }
+}
 
 #carrusel {
   max-height: 75vh;
@@ -327,6 +339,29 @@ footer {
 }
 #carrusel .slide img {
   width: 100%;
+  object-fit: fill;
+  height: 100%;
+}
+@media (max-width: 428px) {
+  #carrusel {
+    max-height: 30vh;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  #carrusel .slide {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  #carrusel .slide img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+  }
 }
 
 #texto-carrusel {
@@ -336,7 +371,7 @@ footer {
   transform: translate(-50%, -50%);
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   border-radius: 5px;
 }
@@ -348,7 +383,26 @@ footer {
   font-size: 1.5rem;
   padding: 1rem;
 }
+@media (max-width: 428px) {
+  #texto-carrusel {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0;
+  }
+  #texto-carrusel h1 {
+    font-size: 1.1rem;
+    padding: auto;
+  }
+  #texto-carrusel p {
+    font-size: 0.9rem;
+  }
+}
 
+#destinos {
+  padding-top: 8vh;
+}
 #destinos .subtitle {
   font-size: 1.7rem;
   text-align: center;
@@ -380,7 +434,15 @@ footer {
   transition: background-color 0.3s ease;
   margin-right: 1rem;
 }
+@media (max-width: 428px) {
+  #destinos .subtitle {
+    font-size: 1.2rem;
+  }
+}
 
+#servicios {
+  padding-top: 8vh;
+}
 #servicios .subtitle {
   font-size: 1.7rem;
   text-align: center;
@@ -440,7 +502,15 @@ footer {
   line-height: 1.5;
   padding-bottom: 1rem;
 }
+@media (max-width: 428px) {
+  #servicios .subtitle {
+    font-size: 1.2rem;
+  }
+}
 
+#novedades {
+  padding-top: 8vh;
+}
 #novedades .subtitle {
   font-size: 1.7rem;
   text-align: center;
@@ -488,7 +558,15 @@ footer {
   line-height: 1.5;
   padding-bottom: 1rem;
 }
+@media (max-width: 428px) {
+  #novedades .subtitle {
+    font-size: 1.2rem;
+  }
+}
 
+#valoraciones {
+  padding-top: 8vh;
+}
 #valoraciones .subtitle {
   font-size: 1.7rem;
   text-align: center;
@@ -539,9 +617,17 @@ footer {
   font-size: 1.2rem;
   color: #f1c40f;
 }
+@media (max-width: 428px) {
+  #valoraciones .subtitle {
+    font-size: 1.2rem;
+  }
+  #valoraciones p {
+    font-size: 1rem;
+  }
+}
 
 #contactanos {
-  padding: 1rem;
+  padding: 8vh 0 0 0;
   background-color: #f3f3f3;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -601,20 +687,131 @@ footer {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+@media (max-width: 428px) {
+  #contactanos h2 {
+    font-size: 1.2rem;
+  }
+  #contactanos form textarea {
+    min-height: 8rem;
+  }
+  #contactanos form button {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+}
 
 .footer {
-  color: #6c757d;
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
+.footer #menu,
 .footer #rrss {
   display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  width: 100%;
+}
+.footer #menu a,
+.footer #rrss a {
+  margin: 0 1rem;
+  transition: color 0.2s ease-in-out;
+}
+.footer #menu a:hover,
+.footer #rrss a:hover {
+  color: #6c757d;
+}
+.footer p {
+  margin-bottom: 1em;
+  width: 100%;
+  padding-top: 1em;
+}
+.footer img {
+  height: 2rem;
+  width: 2rem;
+}
+.footer img:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 428px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card p,
+.card ul {
+  flex-grow: 1;
+}
+.card p {
+  margin: 10px 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+.card ul {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.card ul li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.card ul li:before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.parallax {
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 428px) {
+  .parallax {
+    height: 40vh;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

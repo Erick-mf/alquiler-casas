@@ -12,11 +12,8 @@
             <section class="header__logo"><a href="index.html">VillaZen</a></section>
             <nav>
                 <ul>
-                    <li class="header__link-margin">
+                    <li>
                         <a href="#destinos" class="header__link">Destinos</a>
-                    </li>
-                    <li class="header__link-margin">
-                        <a href="#servicios" class="header__link">Servicios</a>
                     </li>
                     <li class="header__link-margin">
                         <a href="./html/galeria.html" class="header__link">Galeria</a>
@@ -29,6 +26,21 @@
             <section class="booking">
                 <form action="" method="">
                     <input type="text" id="destino" name="destino" placeholder="Escriba el destino" required />
+                    <details>
+                        <summary>Detalles de la reserva</summary>
+                        <label for="fecha_entrada">Fecha de entrada:</label>
+                        <input type="date" id="fecha_entrada" name="fecha_entrada" required />
+                        <label for="fecha_salida">Fecha de salida:</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida" required />
+                        <label for="personas">Personas:</label>
+                        <select name="personas" id="personas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <button type="submit">Buscar casas</button>
+                    </details>
                     <label for="fecha_entrada">Fecha de entrada:</label>
                     <input type="date" id="fecha_entrada" name="fecha_entrada" required />
                     <label for="fecha_salida">Fecha de salida:</label>
@@ -70,7 +82,7 @@
             <section id="destinos">
                 <h2 class="subtitle">Destinos de moda en España</h2>
                 <div class="container-cards">
-                    <article class="card">
+                    <article class="card" id="card1">
                         <img src="./img/top_destinos/top-destino1.webp" alt="Destino 1" />
                         <h3>Marbella, Andalucia, España</h3>
                         <p>
@@ -90,7 +102,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card2">
                         <img src="./img/top_destinos/top-destino2.webp" alt="Destino 2" />
                         <h3>Andratx, Islas Baleares, España</h3>
                         <p>
@@ -110,7 +122,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card3">
                         <img src="./img/top_destinos/top-destino3.webp" alt="Destino 3" />
                         <h3>Jávea, Comunidad Valenciana, España</h3>
                         <p>
@@ -130,7 +142,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card4">
                         <img src="./img/top_destinos/top-destino4.webp" alt="Destino 4" />
                         <h3>Comunidad de Madrid, Madrid, España</h3>
                         <p>
@@ -148,7 +160,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card5">
                         <img src="./img/top_destinos/top-destino5.webp" alt="Destino 5" />
                         <h3>Santa Cruz de Tenerife, Islas Canarias, España</h3>
                         <p>
@@ -168,7 +180,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card6">
                         <img src="./img/top_destinos/top-destino6.webp" alt="Destino 6" />
                         <h3>La Herradura, Andalucia, España</h3>
                         <p>
@@ -187,7 +199,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card5">
                         <img src="./img/top_destinos/top-destino5.webp" alt="Destino 5" />
                         <h3>Santa Cruz de Tenerife, Islas Canarias, España</h3>
                         <p>
@@ -207,7 +219,7 @@
                             <button>Ver más</button>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card" id="card6">
                         <img src="./img/top_destinos/top-destino6.webp" alt="Destino 6" />
                         <h3>La Herradura, Andalucia, España</h3>
                         <p>
@@ -364,7 +376,6 @@
                     </article>
                 </div>
             </section>
-            <section id="galeria"></section>
             <section id="contactanos">
                 <h2>Contáctanos</h2>
                 <p>¿Tienes alguna pregunta o comentario? Nos encantaría saber de ti.</p>
@@ -381,15 +392,18 @@
         </main>
         <footer class="footer">
             <div id="menu">
+                <a href="#servicios">Servicios</a>
                 <a href="#novedades">Novedades</a>
-                <a ref="#valoraciones">Valoraciones</a>
-                <a href="#contactanos">Contáctanos</a>
+                <a href="#valoraciones">Valoraciones</a>
             </div>
             <div id="rrss">
-                <p>Síguenos en nuestras redes sociales:</p>
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com" target="_blank"
+                    ><img src="./img/rrss/facebook.svg" alt="Facebook"
+                /></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="./img/rrss/x.svg" alt="Twitter" /></a>
+                <a href="https://www.instagram.com" target="_blank"
+                    ><img src="./img/rrss/instagram.svg" alt="Instagram"
+                /></a>
             </div>
             <p>© 2024 Erick Mejía</p>
         </footer>

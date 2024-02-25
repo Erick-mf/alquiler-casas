@@ -2,6 +2,7 @@ $(document).ready(function () {
     translucent();
     carrusel();
     parallax();
+    details();
 });
 
 function translucent() {
@@ -61,5 +62,15 @@ function parallax() {
 
             $("#img-container").append($img);
         });
+    });
+}
+
+function details() {
+    $(".card button").click(function () {
+        // Obtén el ID de la tarjeta
+        var cardId = $(this).closest(".card").attr("id");
+
+        // Redirige a la página de detalles con el ID de la tarjeta como parámetro
+        window.location.href = "./html/detalles.html?id=" + cardId;
     });
 }

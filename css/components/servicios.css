@@ -1,0 +1,69 @@
+#servicios {
+  padding-top: 8vh;
+}
+#servicios .subtitle {
+  font-size: 1.7rem;
+  text-align: center;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+#servicios .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  -webkit-overflow-scrolling: touch;
+}
+#servicios .container-cards .card-service {
+  flex: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-right: 1rem;
+  max-width: 200px;
+}
+#servicios .container-cards .card-service {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+#servicios .container-cards .card-service:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+#servicios .container-cards .card-service img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+#servicios .container-cards .card-service h3,
+#servicios .container-cards .card-service p {
+  justify-self: center;
+}
+#servicios .container-cards .card-service h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+#servicios .container-cards .card-service p {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+@media (max-width: 428px) {
+  #servicios .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=servicios.css.map */

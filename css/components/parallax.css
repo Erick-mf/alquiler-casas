@@ -1,0 +1,15 @@
+.parallax {
+  height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 428px) {
+  .parallax {
+    height: 40vh;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=parallax.css.map */

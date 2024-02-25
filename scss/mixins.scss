@@ -1,3 +1,11 @@
+@import "variables";
+
+/// Mixin para establecer propiedades de flexbox
+/// @group mixins
+/// @param {String} $display - Tipo de display
+/// @param {String} $direction - Dirección del flujo de elementos
+/// @param {String} $item - Alineación de los elementos
+/// @param {String} $justify - Justificación del contenido
 @mixin flexbox($display, $direction, $item, $justify) {
   display: $display;
   flex-direction: $direction;
@@ -5,18 +13,24 @@
   justify-content: $justify;
 }
 
-
+/// Mixin para crear una cuadrícula de tarjetas
+/// @group mixins
+/// @param {Length} $size - Tamaño mínimo de las tarjetas
+/// @param {Length} $gap - Espacio entre las tarjetas
 @mixin grid-card($size, $gap) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
   gap: $gap;
   justify-items: center;
-
 }
 
+/// Mixin para estilizar botones
+/// @group mixins
+/// @param {Length} $font-size - Tamaño de fuente del botón
+/// @param {Length} $padding - Relleno del botón
 @mixin button($font-size, $padding) {
   background-color: #333;
-  color: #fff;
+  color: $bg-color;
   font-weight: bold;
   font-size: $font-size;
   border: none;
@@ -26,6 +40,8 @@
   transition: background-color 0.3s ease;
 }
 
+/// Mixin para estilizar subtítulos
+/// @group mixins
 @mixin subtitle() {
   font-size: $font-size * 1.7;
   text-align: center;
@@ -33,6 +49,8 @@
   border-bottom: 3px solid $color-text;
 }
 
+/// Mixin para estilizar la base de las tarjetas
+/// @group mixins
 @mixin card-base() {
   background-color: $color-background;
   border-radius: 5px;
@@ -48,6 +66,11 @@
   }
 }
 
+/// Mixin para estilizar el cuerpo de las tarjetas
+/// @group mixins
+/// @param {Length} $img-height - Altura de las imágenes de las tarjetas
+/// @param {String} $object-fit - Ajuste del objeto de las imágenes
+/// @param {Length} $size - Tamaño de fuente del texto de las tarjetas
 @mixin card-base-body($img-height, $object-fit, $size) {
   img {
     width: 100%;
@@ -69,13 +92,16 @@
 
   p {
     margin: 0 $base-margin;
-    font-size: $size*0.9;
+    font-size: $size * 0.9;
     color: $color-text;
     line-height: 1.5;
     padding-bottom: $base-padding;
   }
 }
 
+/// Mixin para crear un carrusel
+/// @group mixins
+/// @param {Length} $height - Altura del carrusel
 @mixin carrusel($height) {
   max-height: $height;
   height: 100%;
@@ -92,10 +118,14 @@
 
     img {
       width: 100%;
+      object-fit: fill;
+      height: 100%;
     }
   }
 }
 
+/// Mixin para crear un slider
+/// @group mixins
 @mixin slider {
   display: flex;
   overflow-x: auto;

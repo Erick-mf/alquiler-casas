@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "type": "module",
     "description": "Proyecto para aprender SASS",
-    "main": "main.js",
+    "main": "index.js",
     "scripts": {
         "sass": "sass --watch scss:css"
     },

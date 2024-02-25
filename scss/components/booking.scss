@@ -1,0 +1,148 @@
+@use "sass:math";
+
+@import "../mixins.scss";
+@import "../variables.scss";
+
+/// Estilos para el contenedor de reservas
+/// @group componentes
+.booking {
+  padding: $base-padding;
+  border-top: 2px solid #ddd;
+  max-width: $max-width;
+  margin: auto;
+
+  /// Estilos para el formulario dentro del contenedor de reservas
+  /// @group componentes
+  form {
+    @include flexbox(flex, row, center, space-between);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+    /// Estilos para los campos de entrada y selección dentro del formulario
+    /// @group componentes
+    input,
+    select {
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      /// Estilos para los campos de texto dentro del formulario
+      /// @group componentes
+      &[type="text"] {
+        width: 20rem;
+        padding: math.div($base-padding, 2);
+        font-size: $font-size;
+      }
+
+      /// Estilos para el marcador de posición dentro de los campos de entrada
+      /// @group componentes
+      &::placeholder {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      /// Estilos para los campos de entrada en foco
+      /// @group componentes
+      &:focus {
+        border-color: rgb(0, 0, 0, 0.5);
+        transition: border-color 0.3s ease;
+      }
+    }
+
+    /// Estilos para los detalles dentro del formulario
+    /// @group componentes
+    details {
+      display: none;
+    }
+
+    /// Estilos para el selector de personas dentro del formulario
+    /// @group componentes
+    #personas {
+      width: 4rem;
+      padding: 0.5rem 0;
+      margin: 0 $base-margin;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      /// Estilos para las opciones dentro del selector de personas
+      /// @group componentes
+      option {
+        text-align: center;
+      }
+    }
+
+    /// Estilos para las opciones dentro del formulario
+    /// @group componentes
+    option {
+      text-align: center;
+    }
+
+    /// Estilos para el botón dentro del formulario
+    /// @group componentes
+    button {
+      @include button($font-size, 0.5rem);
+
+      /// Estilos para el botón al pasar el ratón
+      /// @group componentes
+      &:hover {
+        background-color: #444;
+      }
+    }
+  }
+
+  /// Estilos para el contenedor de reservas en pantallas pequeñas
+  /// @group componentes
+  @media (max-width: $mobile) {
+    margin-top: $base-margin * 7;
+
+    /// Estilos para el formulario en pantallas pequeñas
+    /// @group componentes
+    form {
+      width: 100%;
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      input[type="date"],
+      input[type="text"],
+      #personas,
+      button {
+        width: 100%;
+        padding: auto;
+        margin: math.div($base-margin, 2) auto;
+      }
+
+      /// Estilos para los detalles en pantallas pequeñas
+      /// @group componentes
+      details {
+        display: block;
+        width: 100%;
+        z-index: 10;
+        background-color: $bg-color;
+
+        /// Estilos para los campos de entrada y botón dentro de los detalles en pantallas pequeñas
+        /// @group componentes
+        label,
+        input[type="date"],
+        input[type="text"],
+        select,
+        button {
+          display: block;
+        }
+      }
+
+      /// Estilos para los campos de entrada y botón en pantallas pequeñas
+      /// @group componentes
+      label,
+      input[type="date"],
+      select,
+      button {
+        display: none;
+      }
+    }
+  }
+}

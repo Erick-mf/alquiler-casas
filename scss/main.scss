@@ -1,276 +1,59 @@
-@import "base";
+/// Reset de estilos
+/// @group configuración
+@import "reset";
+
+/// Estilos de layout
+/// @group configuración
 @import "layout";
-@import "components";
+
+/// Estilos de páginas
+/// @group configuración
 @import "pages";
-@import "helpers";
 
-.header {
-  @include flexbox(flex, row, center, space-between);
-  background-color: rgb(255, 255, 255, 1);
-  transition: background-color 0.2s ease-in-out;
+/// Mixins útiles
+/// @group configuración
+@import "mixins";
 
-  &__logo {
-    margin: $base-margin 0;
-    font-size: $font-size * 2;
-  }
+/// Estilos del encabezado
+/// @group componentes
+@import "components/header";
 
-  &__link {
-    &:hover {
-      border-bottom: 4px solid rgba(0, 0, 0, 0.5);
-      padding-bottom: 2px;
-    }
-  }
+/// Estilos de la sección de reservas
+/// @group componentes
+@import "components/booking";
 
-  &__link-margin {
-    margin: $base-margin $base-margin * 2;
-  }
+/// Estilos del carrusel
+/// @group componentes
+@import "components/carrusel";
 
-  &--translucent {
-    background-color: rgba(255, 255, 255, 0.85);
-  }
-}
+/// Estilos de la sección de destinos
+/// @group componentes
+@import "components/destinos";
 
-.booking {
-  padding: $base-padding;
-  border-top: 2px solid #ddd;
-  max-width: 1400px;
-  margin: auto;
+/// Estilos de la sección de servicios
+/// @group componentes
+@import "components/servicios";
 
-  form {
-    @include flexbox(flex, row, center, space-between);
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
+/// Estilos de la sección de novedades
+/// @group componentes
+@import "components/novedades";
 
-    input,
-    select {
-      padding: 0.5rem 0;
-      margin: 0 $base-margin;
-      border: 1px solid #ddd;
-      border-radius: 5px;
+/// Estilos de la sección de valoraciones
+/// @group componentes
+@import "components/valoraciones";
 
-      &[type="text"] {
-        width: 20rem;
-        padding: $base-padding/2;
-        font-size: $font-size;
-      }
+/// Estilos de la sección de contacto
+/// @group componentes
+@import "components/contacto";
 
-      &::placeholder {
-        font-style: italic;
-        font-size: 0.8rem;
-        text-align: center;
-        letter-spacing: 0.5px;
-      }
+/// Estilos del pie de página
+/// @group componentes
+@import "components/footer";
 
-      &:focus {
-        border-color: rgb(0, 0, 0, 0.5);
-        transition: border-color 0.3s ease;
-      }
+/// Estilos de las tarjetas
+/// @group componentes
+@import "components/card";
 
-    }
-
-    #personas {
-      width: 4rem;
-      padding: 0.5rem 0;
-      margin: 0 $base-margin;
-      border: 1px solid #ddd;
-      text-align: center;
-      border-radius: 0.5rem;
-
-      option {
-        text-align: center;
-      }
-    }
-
-    option {
-      text-align: center;
-    }
-
-    button {
-      @include button($font-size, 0.5rem);
-
-      &:hover {
-        background-color: #444;
-      }
-    }
-  }
-}
-
-#carrusel {
-  @include carrusel(75vh);
-}
-
-#texto-carrusel {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-
-  h1 {
-    font-size: $font-size * 2;
-    padding: $base-padding;
-  }
-
-  p {
-    font-size: $font-size * 1.5;
-    padding: $base-padding;
-  }
-}
-
-#destinos {
-  .subtitle {
-    font-size: $font-size * 1.7;
-    text-align: center;
-    color: $color-text;
-    border-bottom: 3px solid $color-text;
-  }
-
-  .container-cards {
-    @include grid-card(300px, 20px);
-
-    .footer-card {
-      @include flexbox(flex, row, center, space-around);
-      font-weight: bold;
-
-      button {
-        @include button($font-size, 0.5rem);
-        margin-right: $base-margin;
-      }
-    }
-  }
-}
-
-#servicios {
-  .subtitle {
-    @include subtitle();
-  }
-
-  .container-cards {
-    @include grid-card(200px, 20px);
-    @include slider();
-
-    .card-service {
-      @include card-base();
-      @include card-base-body(200px, contain, $font-size);
-    }
-  }
-}
-
-#novedades {
-  .subtitle {
-    @include subtitle();
-  }
-
-  .container-cards {
-    @include grid-card(400px, 20px);
-
-    .novedades {
-      @include card-base();
-      @include card-base-body(17rem, cover, $font-size);
-    }
-  }
-}
-
-#valoraciones {
-  .subtitle {
-    @include subtitle();
-  }
-
-  p {
-    font-size: $font-size * 1.2;
-    line-height: 1.5;
-    color: $color-text;
-  }
-
-  .container-cards {
-    @include grid-card(220px, 76px);
-
-    .opinion {
-      @include card-base-body(17rem, cover, $font-size);
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-      .text-bold {
-        font-weight: bold;
-      }
-
-      .stars {
-        font-size: $font-size * 1.2;
-        color: #f1c40f;
-      }
-    }
-  }
-}
-
-#contactanos {
-  padding: $base-padding;
-  background-color: #f3f3f3;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  max-width: 99%;
-  margin: $base-margin*5 auto;
-
-  h2 {
-    color: #6c757d;
-    text-align: center;
-    font-size: $font-size * 1.7;
-    margin-bottom: 1em;
-  }
-
-  p {
-    color: #6c757d;
-    text-align: center;
-    font-size: $font-size * 1.2;
-    margin-bottom: 2em;
-  }
-
-  form {
-    @include flexbox(flex, column, center, center);
-
-    label {
-      margin-bottom: 0.5em;
-      color: $color-text;
-      font-weight: bold;
-      font-size: $font-size * 1.2;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      max-width: 500px;
-      margin-bottom: 1em;
-      padding: 0.75em;
-      border: 1px solid #ced4da;
-      border-radius: 2px;
-
-      &:focus {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      }
-    }
-
-    textarea {
-      resize: none;
-      min-height: 20rem;
-      scrollbar-width: auto;
-    }
-
-    button {
-      @include button(1.3rem, 0.5rem);
-    }
-  }
-}
-
-.footer {
-  color: #6c757d;
-  margin-top: $base-margin * 5;
-  @include grid-card(300px, 20px);
-
-  #rrss {
-    @include flexbox(flex, column, center, space-around);
-  }
-}
+/// Estilos del efecto parallax
+/// @group componentes
+@import "components/parallax";
